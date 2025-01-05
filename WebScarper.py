@@ -10,19 +10,12 @@ driver = webdriver.Chrome()
 
 # Navigate to the starting page
 driver.get("https://yedionp.afeka.ac.il/yedion/fireflyweb.aspx?prgname=Enter_Search")
-with open('courses.json', mode='w', encoding='utf-8') as file:
+with open('coursesWorked.json', mode='w', encoding='utf-8') as file:
     courses_data = []
 # Wait for the selection element and click on "מדעי המחשב"
 wait = WebDriverWait(driver, 10)
 
-# dropdown_arrow = wait.until(EC.element_to_be_clickable(
-#     (By.XPATH, "//div[@id='MyFather5']//span[@class='select2-selection__arrow']")
-# ))
-#
-# # Click the dropdown arrow
-# dropdown_arrow.click()
-print("Dropdown expanded")
-# After clicking the dropdown to open it, wait for the options to be visible
+
 select_element = wait.until(EC.element_to_be_clickable((By.ID, "R1C9")))
 
 # Find the option for "מדעי המחשב" and click it
@@ -37,14 +30,16 @@ show_courses_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[
 show_courses_button.click()
 print("Clicked 'הצגת קורסים בתוכנית לימוד'")
 
-time.sleep(4)
+time.sleep(2)
 
+valueToSearch = "//input[@value='חפש תוכניות לימוד אפשריות למסלול' and @class='btn btn-primary rounded g-mb-12']"
 # Wait for the page to load
 wait.until(EC.presence_of_element_located(
-    (By.XPATH, "//input[@value='חפש תוכניות לימוד אפשריות למסלול' and @class='btn btn-primary rounded g-mb-12']")))
+    (By.XPATH, valueToSearch)))
 
 # Click on the button "חפש תוכניות לימוד אפשריות למסלול"
-search_program_button = driver.find_element(By.XPATH,"//input[@value='חפש תוכניות לימוד אפשריות למסלול' and @class='btn btn-primary rounded g-mb-12']")
+
+search_program_button = driver.find_element(By.XPATH, valueToSearch)
 search_program_button.click()
 print("Clicked 'חפש תוכניות לימוד אפשריות למסלול'")
 
@@ -58,19 +53,18 @@ table = wait.until(
 # Extract the links for courses (look for <a> elements with class 'btn btn-primary rounded g-mb-12')
 links = driver.find_elements(By.XPATH, "//a[@class='btn btn-primary rounded g-mb-12']")
 
-parent_row_index = 2
+parent_row_index = 1
 while True:
     parent_row_id = f"MyFather1000{parent_row_index}"
     parent_row_xpath = f"//div[@id='{parent_row_id}']"
-    if parent_row_index == 6:
+    if parent_row_index == 6: # לומדה can be more abstract
         parent_row_index += 1
         continue
     try:
         parent_row = driver.find_element(By.XPATH, parent_row_xpath)
         course_subject = parent_row.find_elements(By.XPATH, ".//div")[0].text
         # Extract the course link
-        course_link = parent_row.find_elements(By.XPATH, ".//div")[1].find_element(By.TAG_NAME, "a").get_attribute(
-            "href")
+        course_link = parent_row.find_elements(By.XPATH, ".//div")[1].find_element(By.TAG_NAME, "a").get_attribute("href")
         print(f"Found course link: {course_link}")
 
         # Click the course link
@@ -89,6 +83,7 @@ while True:
 
                 child_row = driver.find_element(By.XPATH, child_row_xpath)
                 course_name = child_row.find_elements(By.XPATH, ".//div")[1].text
+                course_code = child_row.find_elements(By.XPATH, ".//div")[0].text
 
                 # Find and click the button
                 button = child_row.find_element(By.XPATH,
@@ -96,7 +91,8 @@ while True:
                 button.click()
                 print(f"Clicked button in row {child_row_id} for course: {course_name}")
                 try:
-                    popup_close_button = driver.find_element(By.XPATH,"//button[@class='btn btn-secondary closefirstmodal' and @data-dismiss='modal']")
+                    popup_close_button = driver.find_element(By.XPATH,
+                                                             "//button[@class='btn btn-secondary closefirstmodal' and @data-dismiss='modal']")
                     popup_close_button.click()
                     driver.back()
                     child_row_index += 1
@@ -123,8 +119,9 @@ while True:
                             -1].strip()
 
                         courses.append({
-                            "Course Subject": course_subject,
-                            "Course Name": course_name,
+                            "נושא מרכזי": course_subject,
+                            "שם הקורס": course_name,
+                            "קוד הקורס": course_code,
                             "סמסטר": semester,
                             "יום בשבוע": day,
                             "שעת התחלה": start_time,
@@ -164,7 +161,7 @@ while True:
         break
 
 # Write all extracted courses data to the JSON file
-with open('courses.json', mode='w', encoding='utf-8') as file:
+with open('coursesWorked.json', mode='w', encoding='utf-8') as file:
     json.dump(courses_data, file, ensure_ascii=False, indent=4)
 
 # Close the browser
@@ -187,7 +184,7 @@ driver.quit()
 # driver.get("https://yedionp.afeka.ac.il/yedion/fireflyweb.aspx?prgname=S_SHOW_PROGS&arguments=-N2025,-N11009")  # Replace with the actual URL
 #
 # # Open JSON file for writing with UTF-8 encoding
-# with open('courses.json', mode='w', encoding='utf-8') as file:
+# with open('coursesWorked.json', mode='w', encoding='utf-8') as file:
 #     courses_data = []
 #
 #     # Wait for the table to load
