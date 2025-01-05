@@ -31,7 +31,10 @@ option.click()
 print("Selected 'מדעי המחשב'")
 
 time.sleep(2)
+print("Selected 2024")
 # Click on the button "הצגת קורסים בתוכנית לימוד"
+
+
 show_courses_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@value='הצגת קורסים בתוכנית לימוד']")))
 
 show_courses_button.click()
@@ -63,10 +66,12 @@ parent_row_index = 1
 while True:
     parent_row_id = f"MyFather1000{parent_row_index}"
     parent_row_xpath = f"//div[@id='{parent_row_id}']"
-
+    if parent_row_index == 6:
+        parent_row_index += 1
+        continue
     try:
         parent_row = driver.find_element(By.XPATH, parent_row_xpath)
-
+        course_subject = parent_row.find_elements(By.XPATH, ".//div")[0].text
         # Extract the course link
         course_link = parent_row.find_elements(By.XPATH, ".//div")[1].find_element(By.TAG_NAME, "a").get_attribute(
             "href")
@@ -97,14 +102,14 @@ while True:
 
                 courses_section = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'Father')))
                 courses = []
-                if(course_name == 'לומדה למניעת הטרדה מינית-און ליין'):
+                if course_name == 'לומדה למניעת הטרדה מינית-און ליין':
                     driver.back()
                     wait.until(EC.presence_of_element_located(
                         (By.XPATH, "//div[contains(@class, 'Table container ncontainer WithSearch')]")))
                     break
                 for course in courses_section:
                     try:
-                        semester =course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][1]").text.split(":")[-1].strip()
+                        semester = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][1]").text.split(":")[-1].strip()
                         day = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][2]").text.split(":")[
                             -1].strip()
                         start_time = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][3]").text
@@ -118,6 +123,7 @@ while True:
                             -1].strip()
 
                         courses.append({
+                            "Course Subject": course_subject,
                             "Course Name": course_name,
                             "סמסטר": semester,
                             "יום בשבוע": day,
@@ -138,7 +144,7 @@ while True:
                 driver.back()
                 wait.until(EC.presence_of_element_located(
                     (By.XPATH, "//div[contains(@class, 'Table container ncontainer WithSearch')]")))
-                time.sleep(5)
+                time.sleep(2)
 
                 child_row_index += 1
 
