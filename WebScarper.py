@@ -31,24 +31,20 @@ option.click()
 print("Selected 'מדעי המחשב'")
 
 time.sleep(2)
-print("Selected 2024")
-# Click on the button "הצגת קורסים בתוכנית לימוד"
-
 
 show_courses_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//input[@value='הצגת קורסים בתוכנית לימוד']")))
 
 show_courses_button.click()
 print("Clicked 'הצגת קורסים בתוכנית לימוד'")
 
-time.sleep(1)
+time.sleep(4)
 
 # Wait for the page to load
 wait.until(EC.presence_of_element_located(
     (By.XPATH, "//input[@value='חפש תוכניות לימוד אפשריות למסלול' and @class='btn btn-primary rounded g-mb-12']")))
 
 # Click on the button "חפש תוכניות לימוד אפשריות למסלול"
-search_program_button = driver.find_element(By.XPATH,
-                                            "//input[@value='חפש תוכניות לימוד אפשריות למסלול' and @class='btn btn-primary rounded g-mb-12']")
+search_program_button = driver.find_element(By.XPATH,"//input[@value='חפש תוכניות לימוד אפשריות למסלול' and @class='btn btn-primary rounded g-mb-12']")
 search_program_button.click()
 print("Clicked 'חפש תוכניות לימוד אפשריות למסלול'")
 
@@ -62,7 +58,7 @@ table = wait.until(
 # Extract the links for courses (look for <a> elements with class 'btn btn-primary rounded g-mb-12')
 links = driver.find_elements(By.XPATH, "//a[@class='btn btn-primary rounded g-mb-12']")
 
-parent_row_index = 1
+parent_row_index = 2
 while True:
     parent_row_id = f"MyFather1000{parent_row_index}"
     parent_row_xpath = f"//div[@id='{parent_row_id}']"
@@ -99,14 +95,18 @@ while True:
                                                 ".//input[@value='חיפוש קורס במערכת השעות' and @tabindex='0']")
                 button.click()
                 print(f"Clicked button in row {child_row_id} for course: {course_name}")
-
+                try:
+                    popup_close_button = driver.find_element(By.XPATH,"//button[@class='btn btn-secondary closefirstmodal' and @data-dismiss='modal']")
+                    popup_close_button.click()
+                    driver.back()
+                    child_row_index += 1
+                    time.sleep(2)
+                    print("Closed the popup modal")
+                    continue
+                except Exception:
+                    print("No popup detected")
                 courses_section = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'Father')))
                 courses = []
-                if course_name == 'לומדה למניעת הטרדה מינית-און ליין':
-                    driver.back()
-                    wait.until(EC.presence_of_element_located(
-                        (By.XPATH, "//div[contains(@class, 'Table container ncontainer WithSearch')]")))
-                    break
                 for course in courses_section:
                     try:
                         semester = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][1]").text.split(":")[-1].strip()
