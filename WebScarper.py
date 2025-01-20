@@ -10,7 +10,7 @@ driver = webdriver.Chrome()
 
 # Navigate to the starting page
 driver.get("https://yedionp.afeka.ac.il/yedion/fireflyweb.aspx?prgname=Enter_Search")
-with open('coursesWorked.json', mode='w', encoding='utf-8') as file:
+with open('courses.json', mode='w', encoding='utf-8') as file:
     courses_data = []
 # Wait for the selection element and click on "מדעי המחשב"
 wait = WebDriverWait(driver, 10)
@@ -105,6 +105,9 @@ while True:
                 courses = []
                 for course in courses_section:
                     try:
+                     #   LectureType = course.find_element(By.XPATH, ".//div[contains(@class, 'TextAlignRight')][0]").text
+                      #  GroupCode = course.find_element(By.XPATH, ".//div[contains(@class, 'TextAlignRight')][1]").text
+                       # print(f"{LectureType}, {GroupCode}")
                         semester = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][1]").text.split(":")[-1].strip()
                         day = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][2]").text.split(":")[
                             -1].strip()
@@ -119,15 +122,15 @@ while True:
                             -1].strip()
 
                         courses.append({
-                            "נושא מרכזי": course_subject,
-                            "שם הקורס": course_name,
-                            "קוד הקורס": course_code,
-                            "סמסטר": semester,
-                            "יום בשבוע": day,
-                            "שעת התחלה": start_time,
-                            "שעת סיום": end_time,
-                            "מרצה": lecturer,
-                            "חדר לימוד": room,
+                            "Course Subject": course_subject,
+                            "Course Name": course_name,
+                            "Course Code": course_code,
+                            "Semester": semester,
+                            "Day": day,
+                            "StartTime": start_time,
+                            "EndTime": end_time,
+                            "Lecturer": lecturer,
+                            "Room": room,
                         })
                     except Exception as e:
                         print(f"Error processing a course: {e}")
@@ -161,7 +164,7 @@ while True:
         break
 
 # Write all extracted courses data to the JSON file
-with open('coursesWorked.json', mode='w', encoding='utf-8') as file:
+with open('courses.json', mode='w', encoding='utf-8') as file:
     json.dump(courses_data, file, ensure_ascii=False, indent=4)
 
 # Close the browser
