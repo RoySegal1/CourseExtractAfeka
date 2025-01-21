@@ -27,13 +27,13 @@ def transform_schedule(input_file, output_file):
 
         # Create a group entry for the given course and add it to the "Groups" field
         group_entry = {
-            "Group_Code": entry['Group Code'],
-            "Lecture_Type": getLectureType(entry['Lecture Type']),
-            "StartTime": entry["StartTime"].strip(),
-            "EndTime": entry["EndTime"].strip(),
-            "Room": entry["Room"],
-            "Lecturer": entry["Lecturer"],
-            "Day": getDayByName(entry["Day"])
+            "GroupsCode": entry['Group Code'],
+            "lectureType": getLectureType(entry['Lecture Type']),
+            "startTime": entry["StartTime"].strip(),
+            "endTime": entry["EndTime"].strip(),
+            "room": entry["Room"],
+            "lecturer": entry["Lecturer"],
+            "dayOfWeek": getDayByName(entry["Day"]),
         }
 
         # Add this group entry to the correct course entry in the dictionary
