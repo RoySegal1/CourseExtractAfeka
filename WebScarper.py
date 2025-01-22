@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import json
+import re
 
 # Set up Selenium WebDriver
 driver = webdriver.Chrome()
@@ -102,12 +103,26 @@ while True:
                 except Exception:
                     print("No popup detected")
                 courses_section = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'Father')))
+                GroupAndType_section = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'TextAlignRight')))
+
                 courses = []
-                for course in courses_section:
+                for course, groupAndType in zip(courses_section, GroupAndType_section):
                     try:
-                     #   LectureType = course.find_element(By.XPATH, ".//div[contains(@class, 'TextAlignRight')][0]").text
-                      #  GroupCode = course.find_element(By.XPATH, ".//div[contains(@class, 'TextAlignRight')][1]").text
-                       # print(f"{LectureType}, {GroupCode}")
+                        htmlText = groupAndType.get_attribute('innerHTML')
+                        # Regular expression patterns
+                        course_type_pattern = r"(?<=קורס מסוג\s).*?(?=\s*&nbsp;)"
+                        group_pattern = r"קבוצה : (\d+)"
+
+                        # Extract course type
+                        course_type_match = re.search(course_type_pattern, htmlText)
+                        course_type = course_type_match.group(0) if course_type_match else None
+
+                        # Extract group number
+                        group_match = re.search(group_pattern, htmlText)
+                        group_number = group_match.group(1) if group_match else None
+
+                        print("Course Type:", course_type)
+                        print("Group Number:", group_number)
                         semester = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][1]").text.split(":")[-1].strip()
                         day = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][2]").text.split(":")[
                             -1].strip()
@@ -125,6 +140,8 @@ while True:
                             "Course Subject": course_subject,
                             "Course Name": course_name,
                             "Course Code": course_code,
+                            "Group Code": group_number,
+                            "Lecture Type": course_type,
                             "Semester": semester,
                             "Day": day,
                             "StartTime": start_time,
