@@ -9,35 +9,39 @@ def transform_schedule(input_file, output_file):
     transformed_data = []
     courses_dict = {}
 
-    # Iterate through the data to group by course code
+    # Iterate through the data to group by course code and semester
     for entry in data:
         course_code = entry["Course Code"]
+        semester = entry["Semester"]
 
-        # If course code is not yet in courses_dict, initialize it
-        if course_code not in courses_dict:
-            courses_dict[course_code] = {
-                "Course_Type": entry["Course Subject"],
-                "Course_Name": entry["Course Name"],
-                "Course_Code": entry["Course Code"],
-                "Semester": entry["Semester"],
-                "Department": "cs",
-                "Prerequisites": [],
-                "Groups": []  # Initialize groups as an empty list
+        # Unique key combining course code and semester
+        course_key = f"{course_code}_{semester}"
+
+        # If course key is not yet in courses_dict, initialize it
+        if course_key not in courses_dict:
+            courses_dict[course_key] = {
+                "courseType": entry["Course Subject"],
+                "courseName": entry["Course Name"],
+                "courseCode": entry["Course Code"],
+                "semester": entry["Semester"],
+                "department": "cs",
+                "prerequisites": [],
+                "groups": []  # Initialize groups as an empty list
             }
 
         # Create a group entry for the given course and add it to the "Groups" field
         group_entry = {
-            "GroupsCode": entry['Group Code'],
+            "groupCode": entry['Group Code'] + '/1' if getLectureType(entry['Lecture Type']) == 1 else entry['Group Code'],
             "lectureType": getLectureType(entry['Lecture Type']),
             "startTime": entry["StartTime"].strip(),
             "endTime": entry["EndTime"].strip(),
             "room": entry["Room"],
             "lecturer": entry["Lecturer"],
-            "dayOfWeek": getDayByName(entry["Day"]),
+            "dayOfWeek": getDayByName(entry["Day"])
         }
 
         # Add this group entry to the correct course entry in the dictionary
-        courses_dict[course_code]["Groups"].append(group_entry)
+        courses_dict[course_key]["groups"].append(group_entry)
 
     # Convert the dictionary values to a list and write to output file
     transformed_data = list(courses_dict.values())
@@ -70,6 +74,6 @@ def getLectureType(name):
 
 
 if __name__ == "__main__":
-    input_file = 'd:/Projects/PycharmProjects/CourseExtractAfeka/courses.json'
-    output_file = 'd:/Projects/PycharmProjects/CourseExtractAfeka/coursesWorked_transformed.json'
+    input_file = './courses.json'
+    output_file = './coursesWorked_transformed2.json'
     transform_schedule(input_file, output_file)
