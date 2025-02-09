@@ -20,9 +20,9 @@ def transform_schedule(input_file, output_file):
         # If course key is not yet in courses_dict, initialize it
         if course_key not in courses_dict:
             courses_dict[course_key] = {
-                "courseType": entry["Course Subject"],
+                "courseType": clean_course_subject(entry["Course Subject"]),
                 "courseName": entry["Course Name"],
-                "courseCode": entry["Course Code"],
+                "courseCode": entry["Course Code"] + "-" +getLastSuffixforCode(entry["Semester"]),
                 "semester": entry["Semester"],
                 "department": "cs",
                 "prerequisites": [],
@@ -45,6 +45,8 @@ def transform_schedule(input_file, output_file):
 
     # Convert the dictionary values to a list and write to output file
     transformed_data = list(courses_dict.values())
+    # Sort the data by courseType
+    transformed_data = sorted(transformed_data, key=lambda x: x["courseType"])
 
     # Write the transformed data to the output JSON file
     with open(output_file, 'w', encoding='utf-8') as f:
@@ -61,6 +63,18 @@ def getDayByName(name):
         "ש": 6
     }
     return days.get(name, "Invalid day name")
+def getLastSuffixforCode(semester):
+    semesters = {
+        "א": "1",
+        "ב": "2",
+        "קיץ": "3"
+    }
+    return semesters.get(semester, "Invalid day name")
+
+
+def clean_course_subject(subject):
+    # This will replace spaces with '' and remove any unwanted apostrophes.
+    return subject.replace("'", "")
 
 
 def getLectureType(name):
@@ -75,5 +89,5 @@ def getLectureType(name):
 
 if __name__ == "__main__":
     input_file = './courses.json'
-    output_file = './coursesWorked_transformed2.json'
+    output_file = './coursesWorked_transformed4.json'
     transform_schedule(input_file, output_file)
