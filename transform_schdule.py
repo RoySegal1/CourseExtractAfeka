@@ -66,9 +66,9 @@ def getDayByName(name):
 def getLectureType(name):
     lecturetype = {
         "סופי-הרצאה+תרגול": 0,
-        "מעבדה": 2,
+        "מעבדה": 1,
         "תרגול": 1,
-        'סופי-הרצאה+מעבדה': 3
+        'סופי-הרצאה+מעבדה': 0
     }
     return lecturetype.get(name, "Invalid day name")
 
