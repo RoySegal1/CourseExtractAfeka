@@ -7,14 +7,16 @@ import time
 import re
 import json
 
+
 # Function to clean the grade value (get only the number after "ציון:")
-def clean_grade(grade_text):
-    match = re.search(r"ציון:\s*(\d+)", grade_text)
+def clean_grade(grade_text_in):
+    match = re.search(r"ציון:\s*(\d+)", grade_text_in)
     return match.group(1) if match else "N/A"  # Return "N/A" if not found
 
+
 # Function to clean the course code (get only the number before the first non-digit character)
-def clean_code(code_text):
-    match = re.match(r"(\d+)", code_text)
+def clean_code(code_text_in):
+    match = re.match(r"(\d+)", code_text_in)
     return match.group(1) if match else "N/A"  # Return "N/A" if not found
 
 
@@ -30,12 +32,12 @@ try:
     # Find and fill the username/email field
     print("Filling username...")
     username_field = driver.find_element(By.NAME, "username")
-    username_field.send_keys("UserName")
+    username_field.send_keys("Gilad.Tsfaty")
 
     # Find and fill the password field
     print("Filling password...")
     password_field = driver.find_element(By.NAME, "password")  # Replace with actual ID or selector
-    password_field.send_keys("Password")
+    password_field.send_keys("Last2025GT")
 
     # Submit the form (click the login button or press Enter)
     print("Clicking login button...")
@@ -170,7 +172,7 @@ try:
 
     # Save results to a JSON file
     print("\nSaving results to JSON...")
-    with open("courses_results.json", "w", encoding="utf-8") as json_file:
+    with open("courses_results_gilad.json", "w", encoding="utf-8") as json_file:
         json.dump(results, json_file, ensure_ascii=False, indent=4)
 
     print("Results saved!")

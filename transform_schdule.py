@@ -1,7 +1,8 @@
 import json
+from collections import defaultdict
+import re
 
-
-def transform_schedule(input_file, output_file):
+def transform_schedule1(input_file, output_file):
     # Open and read the input JSON file
     with open(input_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -25,7 +26,9 @@ def transform_schedule(input_file, output_file):
                 "courseCode": entry["Course Code"] + "-" +getLastSuffixforCode(entry["Semester"]),
                 "semester": entry["Semester"],
                 "department": "cs",
-                "prerequisites": [],
+                "courseCredit": entry["Course Credit"],
+                "prerequisites": entry["Course PreCondition"],
+                "prerequisitesAlt": entry["Course PreConditionAlt"],
                 "groups": []  # Initialize groups as an empty list
             }
 
@@ -52,6 +55,40 @@ def transform_schedule(input_file, output_file):
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(transformed_data, f, ensure_ascii=False, indent=4)
 
+def transform_schedule2(input_file, output_file):
+    # Load your JSON file
+    with open(input_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    # Track counters for each base group code
+    for course in data:
+        seen_type_0 = defaultdict(int)
+        seen_type_1 = defaultdict(int)
+
+        for group in course["groups"]:
+            code = group["groupCode"]
+            lecture_type = group["lectureType"]
+
+            if lecture_type == 0:
+                # Normalize by removing _ suffixes first
+                base_code = re.sub(r'_\d+$', '', code)
+                seen_type_0[base_code] += 1
+                if seen_type_0[base_code] > 1:
+                    group["groupCode"] = f"{base_code}_{seen_type_0[base_code]}"
+                else:
+                    group["groupCode"] = base_code
+
+            elif lecture_type == 1:
+                # Normalize by removing / suffixes
+                base_code = re.sub(r'/\d+$', '', code)
+                seen_type_1[base_code] += 1
+                group["groupCode"] = f"{base_code}/{seen_type_1[base_code]}"
+
+    # Save the updated JSON (or print it)
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
+
 def getDayByName(name):
     days = {
         "א": 0,
@@ -63,13 +100,15 @@ def getDayByName(name):
         "ש": 6
     }
     return days.get(name, "Invalid day name")
+
+
 def getLastSuffixforCode(semester):
     semesters = {
         "א": "1",
         "ב": "2",
         "קיץ": "3"
     }
-    return semesters.get(semester, "Invalid day name")
+    return semesters.get(semester, "Invalid semester code")
 
 
 def clean_course_subject(subject):
@@ -80,14 +119,16 @@ def clean_course_subject(subject):
 def getLectureType(name):
     lecturetype = {
         "סופי-הרצאה+תרגול": 0,
+        "סופי-הרצאה": 0,
         "מעבדה": 1,
         "תרגול": 1,
         'סופי-הרצאה+מעבדה': 0
     }
-    return lecturetype.get(name, "Invalid day name")
+    return lecturetype.get(name, "Invalid lecture type")
 
 
 if __name__ == "__main__":
     input_file = './courses.json'
-    output_file = './coursesWorked_transformed4.json'
-    transform_schedule(input_file, output_file)
+    output_file = 'Cs_courses.json'
+    transform_schedule1(input_file, output_file)
+    transform_schedule2(output_file, output_file)

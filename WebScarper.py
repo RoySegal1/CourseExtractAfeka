@@ -54,10 +54,12 @@ def get_credits_and_prerequisites(driver,wait):
     more_info_button.click()
 
     # Extract credits
-    credit_element = driver.find_element(By.XPATH, "//div[@class='col' and contains(text(), 'נ\"ז')]")
+    credit_element = wait.until(EC.presence_of_element_located(
+        (By.XPATH, "//div[@class='col' and contains(text(), 'נ\"ז')]")
+    ))
     credits_pattern = r"נ\"ז : (\d+(\.\d+)?)"
     credit_type_match = re.search(credits_pattern, credit_element.text)
-    credit_found = credit_type_match.group(1) if credit_type_match else 'Didnt Find Credits'
+    credit_found = credit_type_match.group(1) if credit_type_match else '-1'
 
     # Extract prerequisite courses
     pre_course = set()
@@ -85,13 +87,15 @@ def get_credits_and_prerequisites(driver,wait):
 def extract_course_info(driver, wait, course_subject, course_name, course_code, course_credit, pre_courses,
                         pre_courses_maybe):
     """Extract detailed information for a specific course"""
-    courses_section = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'Father')))
+    #courses_section = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'Father')))
     group_and_type_section = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'TextAlignRight')))
-
+    all_course_tables = wait.until(
+        EC.presence_of_all_elements_located((By.CLASS_NAME, 'Table.container.ncontainer.WithSearch')))
     courses = []
-    for course, group_and_type in zip(courses_section, group_and_type_section):
+    for courseTable, group_and_type in zip(all_course_tables, group_and_type_section):
         try:
             html_text = group_and_type.get_attribute('innerHTML')
+            courses_rows = courseTable.find_elements(By.CLASS_NAME, "row.Tr.Father")
 
             # Extract course type and group number
             course_type_pattern = r"(?<=קורס מסוג\s).*?(?=\s*&nbsp;)"
@@ -105,40 +109,40 @@ def extract_course_info(driver, wait, course_subject, course_name, course_code, 
 
             print("Course Type:", course_type)
             print("Group Number:", group_number)
+            for course in courses_rows:
+                # Extract course details
+                semester = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][1]").text.split(":")[
+                    -1].strip()
+                day = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][2]").text.split(":")[-1].strip()
+                start_time = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][3]").text
+                end_time = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][4]").text
 
-            # Extract course details
-            semester = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][1]").text.split(":")[
-                -1].strip()
-            day = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][2]").text.split(":")[-1].strip()
-            start_time = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][3]").text
-            end_time = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][4]").text
+                try:
+                    lecturer = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][5]//a").text.strip()
+                except Exception:
+                    lecturer = "No Lecturer Yet"
 
-            try:
-                lecturer = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][5]//a").text.strip()
-            except Exception:
-                lecturer = "No Lecturer Yet"
+                room = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][6]").text.split(":")[-1].strip()
 
-            room = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][6]").text.split(":")[-1].strip()
+                # Create course data dictionary
+                course_data = {
+                    "Course Subject": course_subject,
+                    "Course Name": course_name,
+                    "Course Code": course_code,
+                    "Course Credit": course_credit,
+                    "Course PreCondition": list(pre_courses),
+                    "Course PreConditionAlt": list(pre_courses_maybe),
+                    "Group Code": group_number,
+                    "Lecture Type": course_type,
+                    "Semester": semester,
+                    "Day": day,
+                    "StartTime": start_time,
+                    "EndTime": end_time,
+                    "Lecturer": lecturer,
+                    "Room": room,
+                }
 
-            # Create course data dictionary
-            course_data = {
-                "Course Subject": course_subject,
-                "Course Name": course_name,
-                "Course Code": course_code,
-                "Course Credit": course_credit,
-                "Course PreCondition": list(pre_courses),
-                "Course PreConditionAlt": list(pre_courses_maybe),
-                "Group Code": group_number,
-                "Lecture Type": course_type,
-                "Semester": semester,
-                "Day": day,
-                "StartTime": start_time,
-                "EndTime": end_time,
-                "Lecturer": lecturer,
-                "Room": room,
-            }
-
-            courses.append(course_data)
+                courses.append(course_data)
 
         except Exception as e:
             print(f"Error processing a course: {e}")
@@ -195,7 +199,7 @@ def process_child_row(driver, wait, parent_row_index, child_row_index, course_su
         driver.back()
         wait.until(EC.presence_of_element_located(
             (By.XPATH, "//div[contains(@class, 'Table container ncontainer WithSearch')]")))
-        time.sleep(2)
+        time.sleep(8)
 
         return courses_data, True, child_row_index + 1
 
