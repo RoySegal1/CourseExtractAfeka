@@ -5,6 +5,9 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import json
 import re
+import consts
+
+
 
 
 def setup_driver():
@@ -18,13 +21,14 @@ def create_wait(driver, timeout=10):
     return WebDriverWait(driver, timeout)
 
 
-def navigate_to_course_search(driver, wait):
+def navigate_to_course_search(driver, wait, program):
     """Navigate to the initial course search page"""
     driver.get("https://yedionp.afeka.ac.il/yedion/fireflyweb.aspx?prgname=Enter_Search")
 
     # Select computer science department
+    xpath_value_to_select = f".//option[@value='{consts.study_programs[program]}']"
     select_element = wait.until(EC.element_to_be_clickable((By.ID, "R1C9")))
-    option = select_element.find_element(By.XPATH, ".//option[@value='11']")
+    option = select_element.find_element(By.XPATH, xpath_value_to_select)
     option.click()
     print("Selected 'מדעי המחשב'")
 
@@ -213,15 +217,14 @@ def process_parent_row(driver, wait, parent_row_index):
     """Process a parent row (course subject)"""
     all_courses_data = []
 
-    if parent_row_index == 6:  # Skip "לומדה" category
-        return all_courses_data, True, parent_row_index + 1
-
     try:
         parent_row_id = f"MyFather1000{parent_row_index}"
         parent_row_xpath = f"//div[@id='{parent_row_id}']"
 
         parent_row = driver.find_element(By.XPATH, parent_row_xpath)
         course_subject = parent_row.find_elements(By.XPATH, ".//div")[0].text
+        if course_subject == 'קורסי חובה נוספים':
+            return all_courses_data, True, parent_row_index + 1
 
         # Extract and navigate to the course link
         course_link = parent_row.find_elements(By.XPATH, ".//div")[1].find_element(By.TAG_NAME, "a").get_attribute(
@@ -259,7 +262,7 @@ def process_parent_row(driver, wait, parent_row_index):
         return all_courses_data, False, parent_row_index
 
 
-def save_to_json(courses_data, filename='courses.json'):
+def save_to_json(courses_data, filename='courses_electricity.json'):
     """Save the collected data to a JSON file"""
     with open(filename, mode='w', encoding='utf-8') as file:
         json.dump(courses_data, file, ensure_ascii=False, indent=4)
@@ -271,11 +274,11 @@ def main():
     # Initialize
     driver = setup_driver()
     wait = create_wait(driver)
-    navigate_to_course_search(driver, wait)
+    navigate_to_course_search(driver, wait,"הנדסת חשמל")
 
     # Initialize data collection
     all_courses_data = []
-    parent_row_index = 1
+    parent_row_index = 6
     more_parent_rows = True
 
     # Process all parent rows (course subjects)
