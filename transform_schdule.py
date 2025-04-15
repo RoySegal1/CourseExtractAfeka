@@ -121,6 +121,7 @@ def getLectureType(name):
         "סופי-הרצאה+תרגול": 0,
         "סופי-הרצאה": 0,
         "סופי-מעבדה": 0,
+        'סופי-תרגול': 1,
         "מעבדה": 1,
         "תרגול": 1,
         'סופי-הרצאה+מעבדה': 0
@@ -129,8 +130,8 @@ def getLectureType(name):
 
 
 if __name__ == "__main__":
-    input_file = './courses_electricity.json'
-    output_file = 'electricity_base_courses.json'
+    input_file = './courses_40_base.json'
+    output_file = 'tiol_courses.json'
     transform_schedule1(input_file, output_file)
     transform_schedule2(output_file, output_file)
 

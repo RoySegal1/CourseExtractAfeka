@@ -41,7 +41,7 @@ def navigate_to_course_search(driver, wait, program, specialization=''):
     if specialization:
         time.sleep(4)
         select_element_two = wait.until(EC.element_to_be_clickable((By.ID, "R1C2")))
-        xpath_value_to_select = f".//option[@value='{consts.specialization[specialization]}']"
+        xpath_value_to_select = f".//option[@value='{specialization}']"
         option = select_element_two.find_element(By.XPATH, xpath_value_to_select)
         option.click()
 
@@ -118,8 +118,8 @@ def extract_course_info(driver, wait, course_subject, course_name, course_code, 
             group_match = re.search(group_pattern, html_text)
             group_number = group_match.group(1) if group_match else 'Didnt Find Group Number'
 
-            print("Course Type:", course_type)
-            print("Group Number:", group_number)
+           # print("Course Type:", course_type)
+           # print("Group Number:", group_number)
             for course in courses_rows:
                 # Extract course details
                 semester = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][1]").text.split(":")[
@@ -178,7 +178,7 @@ def process_child_row(driver, wait, parent_row_index, child_row_index, course_su
         button = child_row.find_element(By.XPATH,
                                         ".//input[@value='חיפוש קורס במערכת השעות' and @tabindex='0']")
         button.click()
-        print(f"Clicked button in row {child_row_id} for course: {course_name}")
+        #print(f"Clicked button in row {child_row_id} for course: {course_name}")
 
         # Check for popup
         try:
@@ -216,7 +216,7 @@ def process_child_row(driver, wait, parent_row_index, child_row_index, course_su
 
     except Exception as e:
         print(f"No more child rows to process or error. Last processed child row index: {child_row_index - 1}")
-        print(f"Error: {e}")
+        #print(f"Error: {e}")
         return courses_data, False, child_row_index
 
 
@@ -239,7 +239,7 @@ def process_parent_row(driver, wait, parent_row_index):
         print(f"Found course link: {course_link}")
 
         driver.get(course_link)
-        print(f"Clicked the course link: {course_link}")
+        #print(f"Clicked the course link: {course_link}")
 
         # Wait for the page to load
         wait.until(EC.presence_of_element_located(
@@ -265,7 +265,7 @@ def process_parent_row(driver, wait, parent_row_index):
 
     except Exception as e:
         print(f"No more parent rows to process or error. Last processed parent row index: {parent_row_index - 1}")
-        print(f"Error: {e}")
+        #print(f"Error: {e}")
         return all_courses_data, False, parent_row_index
 
 
@@ -279,9 +279,43 @@ def save_to_json(courses_data, filename='courses_electricity_specialization.json
 def main():
     """Main function to run the course scraper"""
     # Initialize
+    # Mapping of study programs to possible specializations
+    specialization_map = {
+        "20": consts.specialization_electricity,
+        "30": consts.specialization_mechanic,
+        "50": consts.specialization_medicine,
+        "10": consts.specialization_Software,
+        "40": consts.specialization_tiol
+    }
+
+    # Display study programs
+    print("Available Study Programs:")
+    for idx, (name, code) in enumerate(consts.study_programs.items(), start=1):
+        print(f"{idx}. {name} ({code})")
+
+    # Get user choice for study program
+    selected_index = int(input("Select a study program by number: ")) - 1
+    selected_program_name = list(consts.study_programs.keys())[selected_index]
+    selected_program_code = consts.study_programs[selected_program_name]
+
+    # Determine if a specialization is needed
+    selected_specialization_name = None
+    selected_specialization_code = None
+    if selected_program_code in specialization_map:
+        specializations = specialization_map[selected_program_code]
+        print("\nAvailable Specializations:")
+        for idx, (spec_name, spec_code) in enumerate(specializations.items(), start=1):
+            print(f"{idx}. {spec_name} ({spec_code})")
+        print(f"{len(specializations)+1}. No specialization (base courses only)")
+
+        spec_choice = int(input("Select a specialization by number: "))
+        if 1 <= spec_choice <= len(specializations):
+            selected_specialization_name = list(specializations.keys())[spec_choice - 1]
+            selected_specialization_code = specializations[selected_specialization_name]
+
     driver = setup_driver()
     wait = create_wait(driver)
-    navigate_to_course_search(driver, wait, "הנדסת חשמל", 'התמחות עיבוד אותות,עיבוד תמונה ווידאו')
+    navigate_to_course_search(driver, wait, selected_program_name, selected_specialization_code)
 
     # Initialize data collection
     all_courses_data = []
@@ -294,7 +328,8 @@ def main():
         all_courses_data.extend(courses_data)
 
     # Save results and clean up
-    save_to_json(all_courses_data,"courses_electricity_specialization4.json")
+    suffix = f"{selected_program_code}_{selected_specialization_code}" if selected_specialization_code else f"{selected_program_code}_base"
+    save_to_json(all_courses_data, f"courses_{suffix}.json")
     driver.quit()
     print("Scraping Ran Successfully")
 
