@@ -1,8 +1,25 @@
 import json
 from collections import defaultdict
 import re
+import consts
 
-def transform_schedule1(input_file, output_file):
+
+def transform_schedule(input_file, output_file, department):
+    transform_schedule1(input_file, output_file, department)
+    transform_schedule2(output_file, output_file)
+    with open("consts.py", "r", encoding="utf-8") as file:
+        lines = file.readlines()
+
+    with open("consts.py", "w", encoding="utf-8") as file:
+        for line in lines:
+            if line.startswith("last_index"):
+                file.write(f"last_index = {consts.last_index}\n")
+            else:
+                file.write(line)
+
+
+
+def transform_schedule1(input_file, output_file, department):
     # Open and read the input JSON file
     with open(input_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -17,15 +34,17 @@ def transform_schedule1(input_file, output_file):
 
         # Unique key combining course code and semester
         course_key = f"{course_code}_{semester}"
-
+        consts.last_index += 1
+        unique_course_code = str(consts.last_index)
         # If course key is not yet in courses_dict, initialize it
         if course_key not in courses_dict:
             courses_dict[course_key] = {
                 "courseType": clean_course_subject(entry["Course Subject"]),
                 "courseName": entry["Course Name"],
-                "courseCode": entry["Course Code"] + "-" +getLastSuffixforCode(entry["Semester"]),
+                "realCourseCode": unique_course_code,
+                "courseCode": entry["Course Code"],
                 "semester": entry["Semester"],
-                "department": "cs",
+                "department": department,
                 "courseCredit": entry["Course Credit"],
                 "prerequisites": entry["Course PreCondition"],
                 "prerequisitesAlt": entry["Course PreConditionAlt"],
@@ -130,8 +149,7 @@ def getLectureType(name):
 
 
 if __name__ == "__main__":
-    input_file = './courses_40_base.json'
-    output_file = 'tiol_courses.json'
-    transform_schedule1(input_file, output_file)
-    transform_schedule2(output_file, output_file)
+    input_file = './courses_19_base.json'
+    output_file = 'datacs_courses.json'
+    transform_schedule(input_file, output_file, "med")
 

@@ -1,0 +1,660 @@
+[
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "בסיסי נתונים",
+        "Course Code": "40102",
+        "Course Credit": "3.50",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "Group Code": "254010203",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "א",
+        "Day": "ג",
+        "StartTime": " 08:00",
+        "EndTime": " 10:50",
+        "Lecturer": "ד\"ר קריב גליה",
+        "Room": "207 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "בסיסי נתונים",
+        "Course Code": "40102",
+        "Course Credit": "3.50",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "Group Code": "254010204",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "א",
+        "Day": "ג",
+        "StartTime": " 13:00",
+        "EndTime": " 15:50",
+        "Lecturer": "ד\"ר קריב גליה",
+        "Room": "203 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "בסיסי נתונים",
+        "Course Code": "40102",
+        "Course Credit": "3.50",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "Group Code": "254010205",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "א",
+        "Day": "ב",
+        "StartTime": " 16:00",
+        "EndTime": " 18:50",
+        "Lecturer": "ד\"ר קריב גליה",
+        "Room": "103 מעב' דואלי פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "בסיסי נתונים",
+        "Course Code": "40102",
+        "Course Credit": "3.50",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "Group Code": "254010206",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "א",
+        "Day": "ב",
+        "StartTime": " 12:00",
+        "EndTime": " 14:50",
+        "Lecturer": "ד\"ר קריב גליה",
+        "Room": "מפ\"ט אולם כנסים"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "בסיסי נתונים",
+        "Course Code": "40102",
+        "Course Credit": "3.50",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "Group Code": "254010203",
+        "Lecture Type": "תרגול",
+        "Semester": "א",
+        "Day": "ג",
+        "StartTime": " 11:00",
+        "EndTime": " 11:50",
+        "Lecturer": "ד\"ר קריב גליה",
+        "Room": "207 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "בסיסי נתונים",
+        "Course Code": "40102",
+        "Course Credit": "3.50",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "Group Code": "254010204",
+        "Lecture Type": "תרגול",
+        "Semester": "א",
+        "Day": "ג",
+        "StartTime": " 16:00",
+        "EndTime": " 16:50",
+        "Lecturer": "ד\"ר קריב גליה",
+        "Room": "203 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "בסיסי נתונים",
+        "Course Code": "40102",
+        "Course Credit": "3.50",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "Group Code": "254010205",
+        "Lecture Type": "תרגול",
+        "Semester": "א",
+        "Day": "ב",
+        "StartTime": " 19:00",
+        "EndTime": " 19:50",
+        "Lecturer": "ד\"ר קריב גליה",
+        "Room": "103 מעב' דואלי פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "בסיסי נתונים",
+        "Course Code": "40102",
+        "Course Credit": "3.50",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "Group Code": "254010206",
+        "Lecture Type": "תרגול",
+        "Semester": "א",
+        "Day": "ב",
+        "StartTime": " 11:00",
+        "EndTime": " 11:50",
+        "Lecturer": "ד\"ר קריב גליה",
+        "Room": "מפ\"ט אולם כנסים"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "בסיסי נתונים",
+        "Course Code": "40102",
+        "Course Credit": "3.50",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "Group Code": "254010201",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "ב",
+        "Day": "ד",
+        "StartTime": " 17:00",
+        "EndTime": " 19:50",
+        "Lecturer": "גב' וינברג אפרת",
+        "Room": "103 מעב' דואלי פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "בסיסי נתונים",
+        "Course Code": "40102",
+        "Course Credit": "3.50",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "Group Code": "254010201",
+        "Lecture Type": "תרגול",
+        "Semester": "ב",
+        "Day": "ד",
+        "StartTime": " 20:00",
+        "EndTime": " 20:50",
+        "Lecturer": "גב' וינברג אפרת",
+        "Room": "103 מעב' דואלי פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "כריית מידע",
+        "Course Code": "40225",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "Course PreConditionAlt": [
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254022503",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "א",
+        "Day": "ו",
+        "StartTime": " 09:00",
+        "EndTime": " 10:50",
+        "Lecturer": "מר שמטניק פבל",
+        "Room": "204 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "כריית מידע",
+        "Course Code": "40225",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "Course PreConditionAlt": [
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254022504",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "א",
+        "Day": "ג",
+        "StartTime": " 15:00",
+        "EndTime": " 16:50",
+        "Lecturer": "מר שמטניק פבל",
+        "Room": "207 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "כריית מידע",
+        "Course Code": "40225",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "Course PreConditionAlt": [
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254022505",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "א",
+        "Day": "ה",
+        "StartTime": " 14:00",
+        "EndTime": " 15:50",
+        "Lecturer": "מר שמטניק פבל",
+        "Room": "101 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "כריית מידע",
+        "Course Code": "40225",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "Course PreConditionAlt": [
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254022503",
+        "Lecture Type": "תרגול",
+        "Semester": "א",
+        "Day": "ו",
+        "StartTime": " 11:00",
+        "EndTime": " 11:50",
+        "Lecturer": "מר שמטניק פבל",
+        "Room": "204 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "כריית מידע",
+        "Course Code": "40225",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "Course PreConditionAlt": [
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254022504",
+        "Lecture Type": "תרגול",
+        "Semester": "א",
+        "Day": "ג",
+        "StartTime": " 17:00",
+        "EndTime": " 17:50",
+        "Lecturer": "מר שמטניק פבל",
+        "Room": "207 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "כריית מידע",
+        "Course Code": "40225",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "Course PreConditionAlt": [
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254022505",
+        "Lecture Type": "תרגול",
+        "Semester": "א",
+        "Day": "ה",
+        "StartTime": " 16:00",
+        "EndTime": " 16:50",
+        "Lecturer": "מר שמטניק פבל",
+        "Room": "101 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "כריית מידע",
+        "Course Code": "40225",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "Course PreConditionAlt": [
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254022501",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "ב",
+        "Day": "ג",
+        "StartTime": " 19:00",
+        "EndTime": " 20:50",
+        "Lecturer": "מר שמטניק פבל",
+        "Room": "208 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "כריית מידע",
+        "Course Code": "40225",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "Course PreConditionAlt": [
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254022502",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "ב",
+        "Day": "ג",
+        "StartTime": " 16:00",
+        "EndTime": " 17:50",
+        "Lecturer": "מר שמטניק פבל",
+        "Room": "204 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "כריית מידע",
+        "Course Code": "40225",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "Course PreConditionAlt": [
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254022501",
+        "Lecture Type": "תרגול",
+        "Semester": "ב",
+        "Day": "ג",
+        "StartTime": " 21:00",
+        "EndTime": " 21:50",
+        "Lecturer": "מר שמטניק פבל",
+        "Room": "208 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "כריית מידע",
+        "Course Code": "40225",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "Course PreConditionAlt": [
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254022502",
+        "Lecture Type": "תרגול",
+        "Semester": "ב",
+        "Day": "ג",
+        "StartTime": " 18:00",
+        "EndTime": " 18:50",
+        "Lecturer": "מר שמטניק פבל",
+        "Room": "204 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "למידה חישובית במערכות רפואיות",
+        "Course Code": "50317",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " חשבון דיפרנציאלי אינטגרלי2",
+            " אלגברה ליניארית",
+            " מבוא להסתברות",
+            " למידה חישובית"
+        ],
+        "Course PreConditionAlt": [],
+        "Group Code": "255031702",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "א",
+        "Day": "ה",
+        "StartTime": " 15:00",
+        "EndTime": " 16:50",
+        "Lecturer": "ד''ר האופטמן עמי (עמיקם)",
+        "Room": "קריה ה'4"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית חובה",
+        "Course Name": "למידה חישובית במערכות רפואיות",
+        "Course Code": "50317",
+        "Course Credit": "2.50",
+        "Course PreCondition": [
+            " חשבון דיפרנציאלי אינטגרלי2",
+            " אלגברה ליניארית",
+            " מבוא להסתברות",
+            " למידה חישובית"
+        ],
+        "Course PreConditionAlt": [],
+        "Group Code": "255031702",
+        "Lecture Type": "תרגול",
+        "Semester": "א",
+        "Day": "ה",
+        "StartTime": " 17:00",
+        "EndTime": " 17:50",
+        "Lecturer": "ד''ר האופטמן עמי (עמיקם)",
+        "Room": "קריה ה'4"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית בחירה",
+        "Course Name": "ניתוח ותכנון מערכות מידע",
+        "Course Code": "40138",
+        "Course Credit": "3.00",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254013803",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "א",
+        "Day": "ב",
+        "StartTime": " 13:00",
+        "EndTime": " 14:50",
+        "Lecturer": "מר פרי עומר",
+        "Room": "מפ\"ט גפן"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית בחירה",
+        "Course Name": "ניתוח ותכנון מערכות מידע",
+        "Course Code": "40138",
+        "Course Credit": "3.00",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254013804",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "א",
+        "Day": "א",
+        "StartTime": " 12:00",
+        "EndTime": " 13:50",
+        "Lecturer": "מר פרי עומר",
+        "Room": "203 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית בחירה",
+        "Course Name": "ניתוח ותכנון מערכות מידע",
+        "Course Code": "40138",
+        "Course Credit": "3.00",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254013805",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "א",
+        "Day": "ב",
+        "StartTime": " 10:00",
+        "EndTime": " 11:50",
+        "Lecturer": "מר פרי עומר",
+        "Room": "103 מעב' דואלי פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית בחירה",
+        "Course Name": "ניתוח ותכנון מערכות מידע",
+        "Course Code": "40138",
+        "Course Credit": "3.00",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254013803",
+        "Lecture Type": "תרגול",
+        "Semester": "א",
+        "Day": "א",
+        "StartTime": " 08:00",
+        "EndTime": " 09:50",
+        "Lecturer": "גב' שליט משעל גילי",
+        "Room": "202 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית בחירה",
+        "Course Name": "ניתוח ותכנון מערכות מידע",
+        "Course Code": "40138",
+        "Course Credit": "3.00",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254013804",
+        "Lecture Type": "תרגול",
+        "Semester": "א",
+        "Day": "ד",
+        "StartTime": " 11:00",
+        "EndTime": " 12:50",
+        "Lecturer": "גב' שליט משעל גילי",
+        "Room": "מפ\"ט תמר"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית בחירה",
+        "Course Name": "ניתוח ותכנון מערכות מידע",
+        "Course Code": "40138",
+        "Course Credit": "3.00",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254013805",
+        "Lecture Type": "תרגול",
+        "Semester": "א",
+        "Day": "ב",
+        "StartTime": " 08:00",
+        "EndTime": " 09:50",
+        "Lecturer": "מר פרי עומר",
+        "Room": "103 מעב' דואלי פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית בחירה",
+        "Course Name": "ניתוח ותכנון מערכות מידע",
+        "Course Code": "40138",
+        "Course Credit": "3.00",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254013801",
+        "Lecture Type": "סופי-הרצאה+תרגול",
+        "Semester": "ב",
+        "Day": "א",
+        "StartTime": " 19:00",
+        "EndTime": " 20:50",
+        "Lecturer": "מר פרי עומר",
+        "Room": "101 פיקוס"
+    },
+    {
+        "Course Subject": "התמחות מערכות מידע רפואית בחירה",
+        "Course Name": "ניתוח ותכנון מערכות מידע",
+        "Course Code": "40138",
+        "Course Credit": "3.00",
+        "Course PreCondition": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Course PreConditionAlt": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "Group Code": "254013801",
+        "Lecture Type": "תרגול",
+        "Semester": "ב",
+        "Day": "ג",
+        "StartTime": " 19:00",
+        "EndTime": " 20:50",
+        "Lecturer": "No Lecturer Yet",
+        "Room": "205 פיקוס"
+    }
+]

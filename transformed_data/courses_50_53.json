@@ -1,0 +1,404 @@
+[
+    {
+        "courseType": "התמחות מערכות מידע רפואית בחירה",
+        "courseName": "ניתוח ותכנון מערכות מידע",
+        "realCourseCode": "146",
+        "courseCode": "40138",
+        "semester": "א",
+        "department": "הנדסה רפואית",
+        "courseCredit": "3.00",
+        "prerequisites": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "prerequisitesAlt": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "groups": [
+            {
+                "groupCode": "254013803",
+                "lectureType": 0,
+                "startTime": "13:00",
+                "endTime": "14:50",
+                "room": "מפ\"ט גפן",
+                "lecturer": "מר פרי עומר",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "254013804",
+                "lectureType": 0,
+                "startTime": "12:00",
+                "endTime": "13:50",
+                "room": "203 פיקוס",
+                "lecturer": "מר פרי עומר",
+                "dayOfWeek": 0
+            },
+            {
+                "groupCode": "254013805",
+                "lectureType": 0,
+                "startTime": "10:00",
+                "endTime": "11:50",
+                "room": "103 מעב' דואלי פיקוס",
+                "lecturer": "מר פרי עומר",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "254013803/1",
+                "lectureType": 1,
+                "startTime": "08:00",
+                "endTime": "09:50",
+                "room": "202 פיקוס",
+                "lecturer": "גב' שליט משעל גילי",
+                "dayOfWeek": 0
+            },
+            {
+                "groupCode": "254013804/1",
+                "lectureType": 1,
+                "startTime": "11:00",
+                "endTime": "12:50",
+                "room": "מפ\"ט תמר",
+                "lecturer": "גב' שליט משעל גילי",
+                "dayOfWeek": 3
+            },
+            {
+                "groupCode": "254013805/1",
+                "lectureType": 1,
+                "startTime": "08:00",
+                "endTime": "09:50",
+                "room": "103 מעב' דואלי פיקוס",
+                "lecturer": "מר פרי עומר",
+                "dayOfWeek": 1
+            }
+        ]
+    },
+    {
+        "courseType": "התמחות מערכות מידע רפואית בחירה",
+        "courseName": "ניתוח ותכנון מערכות מידע",
+        "realCourseCode": "152",
+        "courseCode": "40138",
+        "semester": "ב",
+        "department": "הנדסה רפואית",
+        "courseCredit": "3.00",
+        "prerequisites": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "prerequisitesAlt": [
+            " מבוא למערכות מידע",
+            " בסיסי נתונים"
+        ],
+        "groups": [
+            {
+                "groupCode": "254013801",
+                "lectureType": 0,
+                "startTime": "19:00",
+                "endTime": "20:50",
+                "room": "101 פיקוס",
+                "lecturer": "מר פרי עומר",
+                "dayOfWeek": 0
+            },
+            {
+                "groupCode": "254013801/1",
+                "lectureType": 1,
+                "startTime": "19:00",
+                "endTime": "20:50",
+                "room": "205 פיקוס",
+                "lecturer": "No Lecturer Yet",
+                "dayOfWeek": 2
+            }
+        ]
+    },
+    {
+        "courseType": "התמחות מערכות מידע רפואית חובה",
+        "courseName": "בסיסי נתונים",
+        "realCourseCode": "124",
+        "courseCode": "40102",
+        "semester": "א",
+        "department": "הנדסה רפואית",
+        "courseCredit": "3.50",
+        "prerequisites": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "prerequisitesAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "groups": [
+            {
+                "groupCode": "254010203",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "10:50",
+                "room": "207 פיקוס",
+                "lecturer": "ד\"ר קריב גליה",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "254010204",
+                "lectureType": 0,
+                "startTime": "13:00",
+                "endTime": "15:50",
+                "room": "203 פיקוס",
+                "lecturer": "ד\"ר קריב גליה",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "254010205",
+                "lectureType": 0,
+                "startTime": "16:00",
+                "endTime": "18:50",
+                "room": "103 מעב' דואלי פיקוס",
+                "lecturer": "ד\"ר קריב גליה",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "254010206",
+                "lectureType": 0,
+                "startTime": "12:00",
+                "endTime": "14:50",
+                "room": "מפ\"ט אולם כנסים",
+                "lecturer": "ד\"ר קריב גליה",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "254010203/1",
+                "lectureType": 1,
+                "startTime": "11:00",
+                "endTime": "11:50",
+                "room": "207 פיקוס",
+                "lecturer": "ד\"ר קריב גליה",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "254010204/1",
+                "lectureType": 1,
+                "startTime": "16:00",
+                "endTime": "16:50",
+                "room": "203 פיקוס",
+                "lecturer": "ד\"ר קריב גליה",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "254010205/1",
+                "lectureType": 1,
+                "startTime": "19:00",
+                "endTime": "19:50",
+                "room": "103 מעב' דואלי פיקוס",
+                "lecturer": "ד\"ר קריב גליה",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "254010206/1",
+                "lectureType": 1,
+                "startTime": "11:00",
+                "endTime": "11:50",
+                "room": "מפ\"ט אולם כנסים",
+                "lecturer": "ד\"ר קריב גליה",
+                "dayOfWeek": 1
+            }
+        ]
+    },
+    {
+        "courseType": "התמחות מערכות מידע רפואית חובה",
+        "courseName": "בסיסי נתונים",
+        "realCourseCode": "132",
+        "courseCode": "40102",
+        "semester": "ב",
+        "department": "הנדסה רפואית",
+        "courseCredit": "3.50",
+        "prerequisites": [
+            " מבוא למערכות מידע",
+            " מבוא לתכנות פיתון"
+        ],
+        "prerequisitesAlt": [
+            " מבוא למערכות מידע",
+            " מבוא למדעי המחשב",
+            " מבוא לתכנות פיתון"
+        ],
+        "groups": [
+            {
+                "groupCode": "254010201",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "19:50",
+                "room": "103 מעב' דואלי פיקוס",
+                "lecturer": "גב' וינברג אפרת",
+                "dayOfWeek": 3
+            },
+            {
+                "groupCode": "254010201/1",
+                "lectureType": 1,
+                "startTime": "20:00",
+                "endTime": "20:50",
+                "room": "103 מעב' דואלי פיקוס",
+                "lecturer": "גב' וינברג אפרת",
+                "dayOfWeek": 3
+            }
+        ]
+    },
+    {
+        "courseType": "התמחות מערכות מידע רפואית חובה",
+        "courseName": "כריית מידע",
+        "realCourseCode": "134",
+        "courseCode": "40225",
+        "semester": "א",
+        "department": "הנדסה רפואית",
+        "courseCredit": "2.50",
+        "prerequisites": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "prerequisitesAlt": [
+            " בסיסי נתונים"
+        ],
+        "groups": [
+            {
+                "groupCode": "254022503",
+                "lectureType": 0,
+                "startTime": "09:00",
+                "endTime": "10:50",
+                "room": "204 פיקוס",
+                "lecturer": "מר שמטניק פבל",
+                "dayOfWeek": 5
+            },
+            {
+                "groupCode": "254022504",
+                "lectureType": 0,
+                "startTime": "15:00",
+                "endTime": "16:50",
+                "room": "207 פיקוס",
+                "lecturer": "מר שמטניק פבל",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "254022505",
+                "lectureType": 0,
+                "startTime": "14:00",
+                "endTime": "15:50",
+                "room": "101 פיקוס",
+                "lecturer": "מר שמטניק פבל",
+                "dayOfWeek": 4
+            },
+            {
+                "groupCode": "254022503/1",
+                "lectureType": 1,
+                "startTime": "11:00",
+                "endTime": "11:50",
+                "room": "204 פיקוס",
+                "lecturer": "מר שמטניק פבל",
+                "dayOfWeek": 5
+            },
+            {
+                "groupCode": "254022504/1",
+                "lectureType": 1,
+                "startTime": "17:00",
+                "endTime": "17:50",
+                "room": "207 פיקוס",
+                "lecturer": "מר שמטניק פבל",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "254022505/1",
+                "lectureType": 1,
+                "startTime": "16:00",
+                "endTime": "16:50",
+                "room": "101 פיקוס",
+                "lecturer": "מר שמטניק פבל",
+                "dayOfWeek": 4
+            }
+        ]
+    },
+    {
+        "courseType": "התמחות מערכות מידע רפואית חובה",
+        "courseName": "כריית מידע",
+        "realCourseCode": "140",
+        "courseCode": "40225",
+        "semester": "ב",
+        "department": "הנדסה רפואית",
+        "courseCredit": "2.50",
+        "prerequisites": [
+            " בסיסי נתונים",
+            " מבוא להסתברות"
+        ],
+        "prerequisitesAlt": [
+            " בסיסי נתונים"
+        ],
+        "groups": [
+            {
+                "groupCode": "254022501",
+                "lectureType": 0,
+                "startTime": "19:00",
+                "endTime": "20:50",
+                "room": "208 פיקוס",
+                "lecturer": "מר שמטניק פבל",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "254022502",
+                "lectureType": 0,
+                "startTime": "16:00",
+                "endTime": "17:50",
+                "room": "204 פיקוס",
+                "lecturer": "מר שמטניק פבל",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "254022501/1",
+                "lectureType": 1,
+                "startTime": "21:00",
+                "endTime": "21:50",
+                "room": "208 פיקוס",
+                "lecturer": "מר שמטניק פבל",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "254022502/1",
+                "lectureType": 1,
+                "startTime": "18:00",
+                "endTime": "18:50",
+                "room": "204 פיקוס",
+                "lecturer": "מר שמטניק פבל",
+                "dayOfWeek": 2
+            }
+        ]
+    },
+    {
+        "courseType": "התמחות מערכות מידע רפואית חובה",
+        "courseName": "למידה חישובית במערכות רפואיות",
+        "realCourseCode": "144",
+        "courseCode": "50317",
+        "semester": "א",
+        "department": "הנדסה רפואית",
+        "courseCredit": "2.50",
+        "prerequisites": [
+            " חשבון דיפרנציאלי אינטגרלי2",
+            " אלגברה ליניארית",
+            " מבוא להסתברות",
+            " למידה חישובית"
+        ],
+        "prerequisitesAlt": [],
+        "groups": [
+            {
+                "groupCode": "255031702",
+                "lectureType": 0,
+                "startTime": "15:00",
+                "endTime": "16:50",
+                "room": "קריה ה'4",
+                "lecturer": "ד''ר האופטמן עמי (עמיקם)",
+                "dayOfWeek": 4
+            },
+            {
+                "groupCode": "255031702/1",
+                "lectureType": 1,
+                "startTime": "17:00",
+                "endTime": "17:50",
+                "room": "קריה ה'4",
+                "lecturer": "ד''ר האופטמן עמי (עמיקם)",
+                "dayOfWeek": 4
+            }
+        ]
+    }
+]

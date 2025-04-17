@@ -2,7 +2,7 @@
     {
         "courseType": "פרויקט גמר",
         "courseName": "פרויקט גמר חלק א'",
-        "courseCode": "20411-2",
+        "courseCode": "145",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "1.00",
@@ -39,12 +39,13 @@
                 "lecturer": "מר רבינוביץ אבי",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20411"
     },
     {
         "courseType": "פרויקט גמר",
         "courseName": "פרויקט גמר חלק א'",
-        "courseCode": "20411-3",
+        "courseCode": "146",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "1.00",
@@ -81,12 +82,13 @@
                 "lecturer": "מר וייצמן יואל פרדג",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20411"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "מבוא לתכנות",
-        "courseCode": "10826-1",
+        "courseCode": "147",
         "semester": "א",
         "department": "cs",
         "courseCredit": "4.00",
@@ -147,12 +149,13 @@
                 "lecturer": "מר אוהב ציון שי טנא",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "10826"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "מבוא לתכנות",
-        "courseCode": "10826-3",
+        "courseCode": "148",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "4.00",
@@ -177,12 +180,13 @@
                 "lecturer": "מר איסקוב גיא",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "10826"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "מערכות ספרתיות",
-        "courseCode": "20119-1",
+        "courseCode": "149",
         "semester": "א",
         "department": "cs",
         "courseCredit": "3.50",
@@ -207,12 +211,13 @@
                 "lecturer": "ד\"ר שמואלי רון",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20119"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "מערכות ספרתיות",
-        "courseCode": "20119-2",
+        "courseCode": "150",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.50",
@@ -273,12 +278,13 @@
                 "lecturer": "ד\"ר שמואלי רון",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20119"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "הנדסת חשמל א'",
-        "courseCode": "20122-1",
+        "courseCode": "151",
         "semester": "א",
         "department": "cs",
         "courseCredit": "5.00",
@@ -315,12 +321,13 @@
                 "lecturer": "ד\"ר כץ אייל",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20122"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "הנדסת חשמל א'",
-        "courseCode": "20122-2",
+        "courseCode": "152",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "5.00",
@@ -411,12 +418,13 @@
                 "lecturer": "ד''ר בלל יעל",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20122"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "חשבון דיפרנציאלי אינטגרלי1",
-        "courseCode": "90901-1",
+        "courseCode": "153",
         "semester": "א",
         "department": "cs",
         "courseCredit": "5.00",
@@ -1167,12 +1175,13 @@
                 "lecturer": "גב' קנדליס אלינה",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "90901"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "חשבון דיפרנציאלי אינטגרלי1",
-        "courseCode": "90901-2",
+        "courseCode": "154",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "5.00",
@@ -1293,12 +1302,13 @@
                 "lecturer": "גב' קנדליס אלינה",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "90901"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "חשבון דיפרנציאלי אינטגרלי2",
-        "courseCode": "90902-1",
+        "courseCode": "155",
         "semester": "א",
         "department": "cs",
         "courseCredit": "5.00",
@@ -1344,12 +1354,13 @@
                 "lecturer": "גב' נמירובסקי אירינה",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "90902"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "חשבון דיפרנציאלי אינטגרלי2",
-        "courseCode": "90902-2",
+        "courseCode": "156",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "5.00",
@@ -2115,12 +2126,13 @@
                 "lecturer": "מר פרס חוזה אנטוניו",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "90902"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "פיזיקה-מכניקה",
-        "courseCode": "90903-1",
+        "courseCode": "157",
         "semester": "א",
         "department": "cs",
         "courseCredit": "5.00",
@@ -2239,12 +2251,13 @@
                 "lecturer": "גב' בלובשטיין הראל אילנה",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "90903"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "פיזיקה-מכניקה",
-        "courseCode": "90903-2",
+        "courseCode": "158",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "5.00",
@@ -2534,12 +2547,13 @@
                 "lecturer": "גב' בלובשטיין הראל אילנה",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "90903"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "פיזיקה-מכניקה",
-        "courseCode": "90903-3",
+        "courseCode": "159",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "5.00",
@@ -2604,12 +2618,13 @@
                 "lecturer": "מר אולבינסקי אלכסנדר",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "90903"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "פיזיקה חשמל ומגנטיות",
-        "courseCode": "90904-1",
+        "courseCode": "160",
         "semester": "א",
         "department": "cs",
         "courseCredit": "5.00",
@@ -2879,12 +2894,13 @@
                 "lecturer": "גב' ארזי שחם תמר",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "90904"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "פיזיקה חשמל ומגנטיות",
-        "courseCode": "90904-2",
+        "courseCode": "161",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "5.00",
@@ -3001,12 +3017,13 @@
                 "lecturer": "גב' אליהו דנה",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "90904"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "פיזיקה חשמל ומגנטיות",
-        "courseCode": "90904-3",
+        "courseCode": "162",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "5.00",
@@ -3042,12 +3059,13 @@
                 "lecturer": "מר רוזנבלום לוי",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "90904"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "אלגברה ליניארית",
-        "courseCode": "90905-1",
+        "courseCode": "163",
         "semester": "א",
         "department": "cs",
         "courseCredit": "5.00",
@@ -3765,12 +3783,13 @@
                 "lecturer": "מר בנגיאט עמית",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "90905"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "אלגברה ליניארית",
-        "courseCode": "90905-2",
+        "courseCode": "164",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "5.00",
@@ -3876,12 +3895,13 @@
                 "lecturer": "מר כהן יונתן",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "90905"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "משוואות דיפ' רגילות",
-        "courseCode": "90914-1",
+        "courseCode": "165",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -4000,12 +4020,13 @@
                 "lecturer": "מר ריקס חיים",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "90914"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "משוואות דיפ' רגילות",
-        "courseCode": "90914-2",
+        "courseCode": "166",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -4196,12 +4217,13 @@
                 "lecturer": "מר מינקין אלכסנדר",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "90914"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "משוואות דיפ' רגילות",
-        "courseCode": "90914-3",
+        "courseCode": "167",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "2.50",
@@ -4248,12 +4270,13 @@
                 "lecturer": "גב' נמירובסקי אירינה",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "90914"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "מעבדת פיזיקה מכניקה",
-        "courseCode": "90918-1",
+        "courseCode": "168",
         "semester": "א",
         "department": "cs",
         "courseCredit": "1.00",
@@ -4343,12 +4366,13 @@
                 "lecturer": "גב' בלובשטיין הראל אילנה",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "90918"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "מעבדת פיזיקה מכניקה",
-        "courseCode": "90918-2",
+        "courseCode": "169",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "1.00",
@@ -4429,12 +4453,13 @@
                 "lecturer": "מר אלקיים רמי",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "90918"
     },
     {
         "courseType": "קורסי חובה שנה א",
         "courseName": "מעבדת פיזיקה מכניקה",
-        "courseCode": "90918-3",
+        "courseCode": "170",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "1.00",
@@ -4461,12 +4486,13 @@
                 "lecturer": "מר גורדין גריגורי",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "90918"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "אלגוריתמים ומבנה נתונים להנדסת חשמל",
-        "courseCode": "10804-2",
+        "courseCode": "171",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.00",
@@ -4549,12 +4575,13 @@
                 "lecturer": "גב' הרצברג מורג אפרת",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "10804"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "סדנה ליישומי מחשב בהנדסה MATLAB",
-        "courseCode": "20120-1",
+        "courseCode": "172",
         "semester": "א",
         "department": "cs",
         "courseCredit": "-1",
@@ -4629,12 +4656,13 @@
                 "lecturer": "מר קרני ירדן",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20120"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "סדנה לפיתון",
-        "courseCode": "20121-1",
+        "courseCode": "173",
         "semester": "א",
         "department": "cs",
         "courseCredit": "-1",
@@ -4708,12 +4736,13 @@
                 "lecturer": "מר קרני ירדן",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20121"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "הנדסת חשמל ב'",
-        "courseCode": "20123-1",
+        "courseCode": "174",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -4779,12 +4808,13 @@
                 "lecturer": "ד''ר בלל יעל",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20123"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "הנדסת חשמל ב'",
-        "courseCode": "20123-2",
+        "courseCode": "175",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -4814,12 +4844,13 @@
                 "lecturer": "ד\"ר כץ אייל",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20123"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מבוא לאותות ומערכות",
-        "courseCode": "20124-1",
+        "courseCode": "176",
         "semester": "א",
         "department": "cs",
         "courseCredit": "5.00",
@@ -4851,12 +4882,13 @@
                 "lecturer": "ד\"ר זיו עופר",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20124"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מבוא לאותות ומערכות",
-        "courseCode": "20124-2",
+        "courseCode": "177",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "5.00",
@@ -4951,12 +4983,13 @@
                 "lecturer": "ד\"ר זיו עופר",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20124"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מבוא לאותות ומערכות",
-        "courseCode": "20124-3",
+        "courseCode": "178",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "5.00",
@@ -5006,12 +5039,13 @@
                 "lecturer": "ד\"ר טריגנו תום",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20124"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "אלקטרוניקה תקבילית",
-        "courseCode": "20125-2",
+        "courseCode": "179",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "5.00",
@@ -5104,12 +5138,13 @@
                 "lecturer": "ד\"ר שפט גבי",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20125"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "אלקטרוניקה תקבילית",
-        "courseCode": "20125-3",
+        "courseCode": "180",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "5.00",
@@ -5148,12 +5183,13 @@
                 "lecturer": "ד\"ר שפט גבי",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20125"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מעבדת מערכות ספרתיות",
-        "courseCode": "20126-1",
+        "courseCode": "181",
         "semester": "א",
         "department": "cs",
         "courseCredit": "1.00",
@@ -5218,12 +5254,13 @@
                 "lecturer": "מר חצקלביץ רון חיים",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20126"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מעבדת מערכות ספרתיות",
-        "courseCode": "20126-2",
+        "courseCode": "182",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "1.00",
@@ -5252,12 +5289,13 @@
                 "lecturer": "מר חצקלביץ רון חיים",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20126"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "התקני מוליכים למחצה",
-        "courseCode": "20132-2",
+        "courseCode": "183",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "4.00",
@@ -5324,12 +5362,13 @@
                 "lecturer": "ד\"ר שטרנפלד איתי",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20132"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "התקני מוליכים למחצה",
-        "courseCode": "20132-3",
+        "courseCode": "184",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "4.00",
@@ -5360,12 +5399,13 @@
                 "lecturer": "ד\"ר שטרנפלד איתי",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20132"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מעבדת חשמל",
-        "courseCode": "20140-1",
+        "courseCode": "185",
         "semester": "א",
         "department": "cs",
         "courseCredit": "1.50",
@@ -5433,12 +5473,13 @@
                 "lecturer": "מר דביר זהר",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20140"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מעבדת חשמל",
-        "courseCode": "20140-2",
+        "courseCode": "186",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "1.50",
@@ -5461,12 +5502,13 @@
                 "lecturer": "גב' הרדי אלרוד עינת",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20140"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מבנה מחשבים",
-        "courseCode": "20144-1",
+        "courseCode": "187",
         "semester": "א",
         "department": "cs",
         "courseCredit": "3.00",
@@ -5533,12 +5575,13 @@
                 "lecturer": "ד\"ר בוסני רם",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20144"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מבנה מחשבים",
-        "courseCode": "20144-2",
+        "courseCode": "188",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.00",
@@ -5569,12 +5612,13 @@
                 "lecturer": "מר לבינגר ערן",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20144"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מבוא להסתברות",
-        "courseCode": "90911-1",
+        "courseCode": "189",
         "semester": "א",
         "department": "cs",
         "courseCredit": "3.50",
@@ -5709,12 +5753,13 @@
                 "lecturer": "גב' יעקובוב רבקה",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "90911"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מבוא להסתברות",
-        "courseCode": "90911-2",
+        "courseCode": "190",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.50",
@@ -5957,12 +6002,13 @@
                 "lecturer": "גב' יעקובוב רבקה",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "90911"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "מבוא להסתברות",
-        "courseCode": "90911-3",
+        "courseCode": "191",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "3.50",
@@ -6025,12 +6071,13 @@
                 "lecturer": "גב' יעקובוב רבקה",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "90911"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "משוואות דיפ' חלקיות",
-        "courseCode": "90915-1",
+        "courseCode": "192",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -6058,12 +6105,13 @@
                 "lecturer": "מר סאלח אכרם",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "90915"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "משוואות דיפ' חלקיות",
-        "courseCode": "90915-2",
+        "courseCode": "193",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -6235,12 +6283,13 @@
                 "lecturer": "מר מרכוס ניר חיים",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "90915"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "אנליזה הרמונית",
-        "courseCode": "90916-1",
+        "courseCode": "194",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -6412,12 +6461,13 @@
                 "lecturer": "גב' נמירובסקי אירינה",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "90916"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "אנליזה הרמונית",
-        "courseCode": "90916-2",
+        "courseCode": "195",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -6445,12 +6495,13 @@
                 "lecturer": "מר בנגיאט עמית",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "90916"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "אנליזה הרמונית",
-        "courseCode": "90916-3",
+        "courseCode": "196",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "2.50",
@@ -6496,12 +6547,13 @@
                 "lecturer": "ד\"ר בן סימון גבריאל",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "90916"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "פונקציות מרוכבות",
-        "courseCode": "90917-1",
+        "courseCode": "197",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -6672,12 +6724,13 @@
                 "lecturer": "מר בנגיאט עמית",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "90917"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "פונקציות מרוכבות",
-        "courseCode": "90917-2",
+        "courseCode": "198",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -6704,12 +6757,13 @@
                 "lecturer": "מר ויינר בועז",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "90917"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "פונקציות מרוכבות",
-        "courseCode": "90917-3",
+        "courseCode": "199",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "2.50",
@@ -6736,12 +6790,13 @@
                 "lecturer": "מר ויינר בועז",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "90917"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "אנליזה נומרית",
-        "courseCode": "90925-1",
+        "courseCode": "200",
         "semester": "א",
         "department": "cs",
         "courseCredit": "3.50",
@@ -6842,12 +6897,13 @@
                 "lecturer": "גב' נמירובסקי אירינה",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "90925"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "אנליזה נומרית",
-        "courseCode": "90925-2",
+        "courseCode": "201",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.50",
@@ -7020,12 +7076,13 @@
                 "lecturer": "גב' נמירובסקי אירינה",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "90925"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "אנליזה נומרית",
-        "courseCode": "90925-3",
+        "courseCode": "202",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "3.50",
@@ -7072,12 +7129,13 @@
                 "lecturer": "מר ריקס חיים",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "90925"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "פיזיקה מודרנית",
-        "courseCode": "90928-1",
+        "courseCode": "203",
         "semester": "א",
         "department": "cs",
         "courseCredit": "3.50",
@@ -7141,12 +7199,13 @@
                 "lecturer": "ד\"ר רזניק אלכסנדר",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "90928"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "פיזיקה מודרנית",
-        "courseCode": "90928-2",
+        "courseCode": "204",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.50",
@@ -7174,12 +7233,13 @@
                 "lecturer": "ד\"ר רזניק אלכסנדר",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "90928"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "גלים",
-        "courseCode": "90929-1",
+        "courseCode": "205",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -7208,12 +7268,13 @@
                 "lecturer": "ד\"ר רויטברג ולדיסלב",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "90929"
     },
     {
         "courseType": "קורסי חובה שנה ב",
         "courseName": "גלים",
-        "courseCode": "90929-2",
+        "courseCode": "206",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -7278,12 +7339,13 @@
                 "lecturer": "ד\"ר דרורי אלון",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "90929"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מבוא לתקשורת",
-        "courseCode": "20115-1",
+        "courseCode": "207",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -7316,12 +7378,13 @@
                 "lecturer": "גב' ליבסטר אירנה",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20115"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מבוא לתקשורת",
-        "courseCode": "20115-2",
+        "courseCode": "208",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -7372,12 +7435,13 @@
                 "lecturer": "גב' ליבסטר אירנה",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20115"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מבוא לבקרה",
-        "courseCode": "20118-1",
+        "courseCode": "209",
         "semester": "א",
         "department": "cs",
         "courseCredit": "3.00",
@@ -7424,12 +7488,13 @@
                 "lecturer": "ד\"ר הופר אושרית",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20118"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מבוא לבקרה",
-        "courseCode": "20118-2",
+        "courseCode": "210",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.00",
@@ -7458,12 +7523,13 @@
                 "lecturer": "ד\"ר הופר אושרית",
                 "dayOfWeek": 5
             }
-        ]
+        ],
+        "realCourseCode": "20118"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מבוא לתהליכים אקראיים",
-        "courseCode": "20127-2",
+        "courseCode": "211",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.50",
@@ -7511,12 +7577,13 @@
                 "lecturer": "פרופ' לפידות יצחק",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20127"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מבוא לתהליכים אקראיים",
-        "courseCode": "20127-3",
+        "courseCode": "212",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "3.50",
@@ -7546,12 +7613,13 @@
                 "lecturer": "מר הדס ניסים",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20127"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מבוא לעיבוד ספרתי של אותות",
-        "courseCode": "20128-1",
+        "courseCode": "213",
         "semester": "א",
         "department": "cs",
         "courseCredit": "4.00",
@@ -7598,12 +7666,13 @@
                 "lecturer": "פרופ' לפידות יצחק",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20128"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מבוא לעיבוד ספרתי של אותות",
-        "courseCode": "20128-3",
+        "courseCode": "214",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "4.00",
@@ -7632,12 +7701,13 @@
                 "lecturer": "ד\"ר זיו עופר",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20128"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מיקרו מעבדים ומיקרו בקרים",
-        "courseCode": "20129-1",
+        "courseCode": "215",
         "semester": "א",
         "department": "cs",
         "courseCredit": "3.50",
@@ -7721,12 +7791,13 @@
                 "lecturer": "פרופ' פלקסר אלעזר",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20129"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מיקרו מעבדים ומיקרו בקרים",
-        "courseCode": "20129-2",
+        "courseCode": "216",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.50",
@@ -7756,12 +7827,13 @@
                 "lecturer": "ד\"ר אברמוב בנימין",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20129"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מיקרו מעבדים ומיקרו בקרים",
-        "courseCode": "20129-3",
+        "courseCode": "217",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "3.50",
@@ -7809,12 +7881,13 @@
                 "lecturer": "ד\"ר אברמוב בנימין",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20129"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "שדות וגלים אלקטרומגנטיים",
-        "courseCode": "20134-1",
+        "courseCode": "218",
         "semester": "א",
         "department": "cs",
         "courseCredit": "4.00",
@@ -7879,12 +7952,13 @@
                 "lecturer": "מר מלי בנימין",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20134"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "שדות וגלים אלקטרומגנטיים",
-        "courseCode": "20134-2",
+        "courseCode": "219",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "4.00",
@@ -7913,12 +7987,13 @@
                 "lecturer": "מר מלי בנימין",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20134"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מעבדת בקרה",
-        "courseCode": "20135-1",
+        "courseCode": "220",
         "semester": "א",
         "department": "cs",
         "courseCredit": "1.50",
@@ -7947,12 +8022,13 @@
                 "lecturer": "מר חצקלביץ רון חיים",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20135"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מעבדת בקרה",
-        "courseCode": "20135-2",
+        "courseCode": "221",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8017,12 +8093,13 @@
                 "lecturer": "מר חצקלביץ רון חיים",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20135"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "שפת תאור חומרה VHDL",
-        "courseCode": "20147-2",
+        "courseCode": "222",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "4.00",
@@ -8114,12 +8191,13 @@
                 "lecturer": "גב' מדינה דורית",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20147"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מעבדה לאלקטרוניקה תקבילית",
-        "courseCode": "20148-2",
+        "courseCode": "223",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8185,12 +8263,13 @@
                 "lecturer": "מר דביר זהר",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20148"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מעבדה לאלקטרוניקה תקבילית",
-        "courseCode": "20148-3",
+        "courseCode": "224",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8211,12 +8290,13 @@
                 "lecturer": "מר דביר זהר",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20148"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "אלקטרוניקה ספרתית",
-        "courseCode": "20304-1",
+        "courseCode": "225",
         "semester": "א",
         "department": "cs",
         "courseCredit": "5.00",
@@ -8283,12 +8363,13 @@
                 "lecturer": "גב' ליבסטר אירנה",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20304"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "אלקטרוניקה ספרתית",
-        "courseCode": "20304-2",
+        "courseCode": "226",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "5.00",
@@ -8328,12 +8409,13 @@
                 "lecturer": "גב' ליבסטר אירנה",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20304"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "אלקטרוניקה ספרתית",
-        "courseCode": "20304-3",
+        "courseCode": "227",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "5.00",
@@ -8373,12 +8455,13 @@
                 "lecturer": "גב' ליבסטר אירנה",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20304"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מעבדה לאלקטרוניקה ספרתית",
-        "courseCode": "20367-1",
+        "courseCode": "228",
         "semester": "א",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8408,12 +8491,13 @@
                 "lecturer": "מר לבנת מיקי",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20367"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מעבדה לאלקטרוניקה ספרתית",
-        "courseCode": "20367-2",
+        "courseCode": "229",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8479,12 +8563,13 @@
                 "lecturer": "מר מלמד יוסף",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20367"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "מעבדה לאלקטרוניקה ספרתית",
-        "courseCode": "20367-3",
+        "courseCode": "230",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8505,12 +8590,13 @@
                 "lecturer": "מר חצקלביץ רון חיים",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20367"
     },
     {
         "courseType": "קורסי חובה שנה ג",
         "courseName": "קוי תמסורת מיקרו-גלים וקרינה",
-        "courseCode": "20372-2",
+        "courseCode": "231",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.00",
@@ -8573,12 +8659,13 @@
                 "lecturer": "מר מלי בנימין",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20372"
     },
     {
         "courseType": "קורסי חובה שנה ד",
         "courseName": "מעבדת תקשורת",
-        "courseCode": "20149-1",
+        "courseCode": "232",
         "semester": "א",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8609,12 +8696,13 @@
                 "lecturer": "גב' ליבסטר אירנה",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20149"
     },
     {
         "courseType": "קורסי חובה שנה ד",
         "courseName": "מעבדת תקשורת",
-        "courseCode": "20149-2",
+        "courseCode": "233",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8654,12 +8742,13 @@
                 "lecturer": "גב' ליבסטר אירנה",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20149"
     },
     {
         "courseType": "קורסי חובה שנה ד",
         "courseName": "מעבדת תקשורת",
-        "courseCode": "20149-3",
+        "courseCode": "234",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8681,12 +8770,13 @@
                 "lecturer": "גב' ליבסטר אירנה",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20149"
     },
     {
         "courseType": "התמחות מערכות הספק ואנרגיה-חובה",
         "courseName": "ייצור והמרת אנרגיה",
-        "courseCode": "20351-2",
+        "courseCode": "235",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.50",
@@ -8715,12 +8805,13 @@
                 "lecturer": "ד\"ר מיטב נדה",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20351"
     },
     {
         "courseType": "התמחות מערכות הספק ואנרגיה-חובה",
         "courseName": "מערכות הספק א'",
-        "courseCode": "20353-2",
+        "courseCode": "236",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.50",
@@ -8747,12 +8838,13 @@
                 "lecturer": "ד\"ר גורפינקל משה",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20353"
     },
     {
         "courseType": "התמחות מערכות הספק ואנרגיה-חובה",
         "courseName": "מערכות הספק ב'",
-        "courseCode": "20354-1",
+        "courseCode": "237",
         "semester": "א",
         "department": "cs",
         "courseCredit": "3.50",
@@ -8780,12 +8872,13 @@
                 "lecturer": "ד\"ר גורפינקל משה",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20354"
     },
     {
         "courseType": "התמחות מערכות הספק ואנרגיה-חובה",
         "courseName": "מתקנים ורשתות למתח גבוה",
-        "courseCode": "20359-1",
+        "courseCode": "238",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -8813,12 +8906,13 @@
                 "lecturer": "מר אביטבול יעקב",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20359"
     },
     {
         "courseType": "התמחות מערכות הספק ואנרגיה-חובה",
         "courseName": "מתקני מתח נמוך",
-        "courseCode": "20360-3",
+        "courseCode": "239",
         "semester": "קיץ",
         "department": "cs",
         "courseCredit": "2.50",
@@ -8845,12 +8939,13 @@
                 "lecturer": "מר אביטבול יעקב",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20360"
     },
     {
         "courseType": "התמחות מערכות הספק ואנרגיה-חובה",
         "courseName": "מעבדה לאלקטרוניקת הספק",
-        "courseCode": "20377-2",
+        "courseCode": "240",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8877,12 +8972,13 @@
                 "lecturer": "No Lecturer Yet",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20377"
     },
     {
         "courseType": "התמחות עיבוד אותות חובה מעבדה",
         "courseName": "מעבדה מתקדמת בעיבוד תמונה",
-        "courseCode": "20327-2",
+        "courseCode": "241",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8909,12 +9005,13 @@
                 "lecturer": "ד\"ר כץ אייל",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20327"
     },
     {
         "courseType": "התמחות עיבוד אותות חובה מעבדה",
         "courseName": "מעבדה מתקדמת בעיבוד ספרתי של אותות",
-        "courseCode": "20338-1",
+        "courseCode": "242",
         "semester": "א",
         "department": "cs",
         "courseCredit": "1.50",
@@ -8934,12 +9031,13 @@
                 "lecturer": "מר נח יואב",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20338"
     },
     {
         "courseType": "התמחות עיבוד אותות תמונה וידאו בחירה",
         "courseName": "ראייה ממוחשבת",
-        "courseCode": "20217-1",
+        "courseCode": "243",
         "semester": "א",
         "department": "cs",
         "courseCredit": "3.00",
@@ -8967,12 +9065,13 @@
                 "lecturer": "ד\"ר כץ אייל",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20217"
     },
     {
         "courseType": "התמחות עיבוד אותות תמונה וידאו בחירה",
         "courseName": "למידת מכונה",
-        "courseCode": "20218-2",
+        "courseCode": "244",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9001,12 +9100,13 @@
                 "lecturer": "ד\"ר טריגנו תום",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20218"
     },
     {
         "courseType": "התמחות עיבוד אותות תמונה וידאו בחירה",
         "courseName": "עיבוד ספרתי של תמונה",
-        "courseCode": "20342-1",
+        "courseCode": "245",
         "semester": "א",
         "department": "cs",
         "courseCredit": "3.00",
@@ -9036,12 +9136,13 @@
                 "lecturer": "ד\"ר שמואלי רון",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20342"
     },
     {
         "courseType": "התמחות עיבוד אותות, תמונה, וידאו חובה",
         "courseName": "מבוא לעיבוד תמונה",
-        "courseCode": "20332-1",
+        "courseCode": "246",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9070,12 +9171,13 @@
                 "lecturer": "ד\"ר שמואלי רון",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20332"
     },
     {
         "courseType": "התמחות עיבוד אותות, תמונה, וידאו חובה",
         "courseName": "מבוא לעיבוד תמונה",
-        "courseCode": "20332-2",
+        "courseCode": "247",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9104,12 +9206,13 @@
                 "lecturer": "ד\"ר שמואלי רון",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20332"
     },
     {
         "courseType": "התמחות עיבוד אותות, תמונה, וידאו חובה",
         "courseName": "עיבוד אותות אקראים",
-        "courseCode": "20337-1",
+        "courseCode": "248",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9140,12 +9243,13 @@
                 "lecturer": "פרופ' לפידות יצחק",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20337"
     },
     {
         "courseType": "התמחות מחשבים-בחירה",
         "courseName": "תכנות מונחה עצמים++C",
-        "courseCode": "10820-1",
+        "courseCode": "249",
         "semester": "א",
         "department": "cs",
         "courseCredit": "3.00",
@@ -9176,12 +9280,13 @@
                 "lecturer": "גב' כליף קרן",
                 "dayOfWeek": 5
             }
-        ]
+        ],
+        "realCourseCode": "10820"
     },
     {
         "courseType": "התמחות מחשבים-בחירה",
         "courseName": "תכן מערכות ספרתיות מהירות",
-        "courseCode": "20211-2",
+        "courseCode": "250",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9209,12 +9314,13 @@
                 "lecturer": "ד\"ר אברמוב בנימין",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20211"
     },
     {
         "courseType": "התמחות מחשבים-בחירה",
         "courseName": "מתודולוגיה תכן וטכנולוגיה VLSI",
-        "courseCode": "20370-1",
+        "courseCode": "251",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9245,12 +9351,13 @@
                 "lecturer": "גב' מדינה דורית",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20370"
     },
     {
         "courseType": "התמחות מחשבים-חובה",
         "courseName": "מעבדה מתקדמת בתכן חומרה",
-        "courseCode": "20209-1",
+        "courseCode": "252",
         "semester": "א",
         "department": "cs",
         "courseCredit": "1.50",
@@ -9297,12 +9404,13 @@
                 "lecturer": "ד\"ר אברמוב בנימין",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20209"
     },
     {
         "courseType": "התמחות מחשבים-חובה",
         "courseName": "יישומי מחשב להנדסת אלקטרוניקה",
-        "courseCode": "20210-1",
+        "courseCode": "253",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9334,12 +9442,13 @@
                 "lecturer": "ד\"ר טורצ'ינסקי דמיטרי",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20210"
     },
     {
         "courseType": "התמחות מחשבים-חובה",
         "courseName": "יישומי מחשב להנדסת אלקטרוניקה",
-        "courseCode": "20210-2",
+        "courseCode": "254",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9407,12 +9516,13 @@
                 "lecturer": "פרופ' פלקסר אלעזר",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20210"
     },
     {
         "courseType": "התמחות מחשבים-חובה",
         "courseName": "תכן חומרה מתקדם",
-        "courseCode": "20216-1",
+        "courseCode": "255",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9461,12 +9571,13 @@
                 "lecturer": "ד\"ר אברמוב בנימין",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20216"
     },
     {
         "courseType": "התמחות תקשורת קורסי בחירה",
         "courseName": "מבוא להנדסה אל\"אופטית",
-        "courseCode": "20343-2",
+        "courseCode": "256",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9496,12 +9607,13 @@
                 "lecturer": "ד\"ר זיו עופר",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20343"
     },
     {
         "courseType": "התמחות תקשורת קורסי בחירה",
         "courseName": "רכיבי רדיו ומיקרוגלים",
-        "courseCode": "20346-2",
+        "courseCode": "257",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "3.00",
@@ -9529,12 +9641,13 @@
                 "lecturer": "פרופ' לוין עלי",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20346"
     },
     {
         "courseType": "התמחות תקשורת קורסי בחירה",
         "courseName": "אנטנות בתקשורת",
-        "courseCode": "20347-1",
+        "courseCode": "258",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9563,12 +9676,13 @@
                 "lecturer": "פרופ' לוין עלי",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20347"
     },
     {
         "courseType": "התמחות תקשורת קורסי בחירה",
         "courseName": "מבוא למערכות מכ\"ם",
-        "courseCode": "20375-1",
+        "courseCode": "259",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9595,12 +9709,13 @@
                 "lecturer": "מר הדס ניסים",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20375"
     },
     {
         "courseType": "התמחות תקשורת קורסי בחירה",
         "courseName": "מערכות מכ\"ם מתקדמות",
-        "courseCode": "20383-2",
+        "courseCode": "260",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9627,12 +9742,13 @@
                 "lecturer": "מר הדס ניסים",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20383"
     },
     {
         "courseType": "התמחות תקשורת קורסי בחירה",
         "courseName": "תקשורת לווינים",
-        "courseCode": "20385-1",
+        "courseCode": "261",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9659,12 +9775,13 @@
                 "lecturer": "ד''ר בלל יעל",
                 "dayOfWeek": 2
             }
-        ]
+        ],
+        "realCourseCode": "20385"
     },
     {
         "courseType": "התמחות תקשורת קורסי חובה",
         "courseName": "תקשורת ספרתית",
-        "courseCode": "20309-1",
+        "courseCode": "262",
         "semester": "א",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9691,12 +9808,13 @@
                 "lecturer": "פרופ' לוין עלי",
                 "dayOfWeek": 0
             }
-        ]
+        ],
+        "realCourseCode": "20309"
     },
     {
         "courseType": "התמחות תקשורת קורסי חובה",
         "courseName": "מעבדה מתקדמת בתקשורת",
-        "courseCode": "20326-1",
+        "courseCode": "263",
         "semester": "א",
         "department": "cs",
         "courseCredit": "1.50",
@@ -9717,12 +9835,13 @@
                 "lecturer": "גב' ליבסטר אירנה",
                 "dayOfWeek": 3
             }
-        ]
+        ],
+        "realCourseCode": "20326"
     },
     {
         "courseType": "התמחות תקשורת קורסי חובה",
         "courseName": "מעבדה מתקדמת בתקשורת",
-        "courseCode": "20326-2",
+        "courseCode": "264",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "1.50",
@@ -9752,12 +9871,13 @@
                 "lecturer": "גב' ליבסטר אירנה",
                 "dayOfWeek": 1
             }
-        ]
+        ],
+        "realCourseCode": "20326"
     },
     {
         "courseType": "התמחות תקשורת קורסי חובה",
         "courseName": "מערכות תקשורת אלחוטית",
-        "courseCode": "20363-2",
+        "courseCode": "265",
         "semester": "ב",
         "department": "cs",
         "courseCredit": "2.50",
@@ -9784,6 +9904,7 @@
                 "lecturer": "פרופ' לוין עלי",
                 "dayOfWeek": 4
             }
-        ]
+        ],
+        "realCourseCode": "20363"
     }
 ]

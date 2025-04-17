@@ -1,0 +1,663 @@
+[
+    {
+        "courseType": "קורסי חובה לימודי אנגלית",
+        "courseName": "אנגלית טרום בסיסי (מכינה)",
+        "courseCode": "266",
+        "semester": "קיץ",
+        "department": "cs",
+        "courseCredit": "Didnt Find Credits",
+        "prerequisites": [],
+        "prerequisitesAlt": [],
+        "groups": [
+            {
+                "groupCode": "250600001",
+                "lectureType": 0,
+                "startTime": "16:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "No Lecturer Yet",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600001_2",
+                "lectureType": 0,
+                "startTime": "16:00",
+                "endTime": "20:50",
+                "room": "115 פיקוס",
+                "lecturer": "No Lecturer Yet",
+                "dayOfWeek": 3
+            }
+        ],
+        "realCourseCode": "6000"
+    },
+    {
+        "courseType": "קורסי חובה לימודי אנגלית",
+        "courseName": "אנגלית בסיסי (מתחילים)",
+        "courseCode": "267",
+        "semester": "א",
+        "department": "cs",
+        "courseCredit": "Didnt Find Credits",
+        "prerequisites": [
+            " אנגלית טרום בסיסי (מכינה)"
+        ],
+        "prerequisitesAlt": [
+            " אנגלית1 - מכינה בדרך",
+            " אנגלית - מכינה בדרך"
+        ],
+        "groups": [
+            {
+                "groupCode": "250600101",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "10:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' רגב מלכה רחל",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600101_2",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "10:50",
+                "room": "קריה ז'3",
+                "lecturer": "גב' רגב מלכה רחל",
+                "dayOfWeek": 4
+            },
+            {
+                "groupCode": "250600105",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "19:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "מר קרמה אלכסנדר",
+                "dayOfWeek": 0
+            },
+            {
+                "groupCode": "250600105_2",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "19:50",
+                "room": "מפ\"ט אתרוג",
+                "lecturer": "מר קרמה אלכסנדר",
+                "dayOfWeek": 4
+            }
+        ],
+        "realCourseCode": "6001"
+    },
+    {
+        "courseType": "קורסי חובה לימודי אנגלית",
+        "courseName": "אנגלית בסיסי (מתחילים)",
+        "courseCode": "268",
+        "semester": "ב",
+        "department": "cs",
+        "courseCredit": "Didnt Find Credits",
+        "prerequisites": [
+            " אנגלית טרום בסיסי (מכינה)"
+        ],
+        "prerequisitesAlt": [
+            " אנגלית1 - מכינה בדרך",
+            " אנגלית - מכינה בדרך"
+        ],
+        "groups": [
+            {
+                "groupCode": "250600102",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "10:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "מר קרמה אלכסנדר",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600102_2",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "10:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "מר קרמה אלכסנדר",
+                "dayOfWeek": 4
+            }
+        ],
+        "realCourseCode": "6001"
+    },
+    {
+        "courseType": "קורסי חובה לימודי אנגלית",
+        "courseName": "אנגלית בסיסי (מתחילים)",
+        "courseCode": "269",
+        "semester": "קיץ",
+        "department": "cs",
+        "courseCredit": "Didnt Find Credits",
+        "prerequisites": [
+            " אנגלית טרום בסיסי (מכינה)"
+        ],
+        "prerequisitesAlt": [
+            " אנגלית1 - מכינה בדרך",
+            " אנגלית - מכינה בדרך"
+        ],
+        "groups": [
+            {
+                "groupCode": "250600103",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט רימון",
+                "lecturer": "מר קרמה אלכסנדר",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600103_2",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "מר קרמה אלכסנדר",
+                "dayOfWeek": 4
+            },
+            {
+                "groupCode": "250600104",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "11:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "מר קרמה אלכסנדר",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600104_2",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "11:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "מר קרמה אלכסנדר",
+                "dayOfWeek": 3
+            }
+        ],
+        "realCourseCode": "6001"
+    },
+    {
+        "courseType": "קורסי חובה לימודי אנגלית",
+        "courseName": "אנגלית מתקדמים א' (בינוניים)",
+        "courseCode": "270",
+        "semester": "א",
+        "department": "cs",
+        "courseCredit": "Didnt Find Credits",
+        "prerequisites": [
+            " אנגלית בסיסי (מתחילים)"
+        ],
+        "prerequisitesAlt": [],
+        "groups": [
+            {
+                "groupCode": "250600202",
+                "lectureType": 0,
+                "startTime": "13:00",
+                "endTime": "16:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "גב' וולפרט רחל",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "250600203",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "גב' מרקס אן",
+                "dayOfWeek": 0
+            },
+            {
+                "groupCode": "250600204",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "11:50",
+                "room": "קריה ה'7",
+                "lecturer": "גב' גרוסו פאולה",
+                "dayOfWeek": 5
+            }
+        ],
+        "realCourseCode": "6002"
+    },
+    {
+        "courseType": "קורסי חובה לימודי אנגלית",
+        "courseName": "אנגלית מתקדמים א' (בינוניים)",
+        "courseCode": "271",
+        "semester": "ב",
+        "department": "cs",
+        "courseCredit": "Didnt Find Credits",
+        "prerequisites": [
+            " אנגלית בסיסי (מתחילים)"
+        ],
+        "prerequisitesAlt": [],
+        "groups": [
+            {
+                "groupCode": "250600205",
+                "lectureType": 0,
+                "startTime": "10:00",
+                "endTime": "13:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "גב' קלף לואיז",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600206",
+                "lectureType": 0,
+                "startTime": "10:00",
+                "endTime": "13:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "גב' מרקס אן",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "250600207",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' מרקס אן",
+                "dayOfWeek": 0
+            },
+            {
+                "groupCode": "250600208",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "11:50",
+                "room": "קריה ה'9",
+                "lecturer": "גב' גרוסו פאולה",
+                "dayOfWeek": 5
+            },
+            {
+                "groupCode": "250600213",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "11:50",
+                "room": "102 פיקוס",
+                "lecturer": "גב' וולפרט רחל",
+                "dayOfWeek": 5
+            }
+        ],
+        "realCourseCode": "6002"
+    },
+    {
+        "courseType": "קורסי חובה לימודי אנגלית",
+        "courseName": "אנגלית מתקדמים א' (בינוניים)",
+        "courseCode": "272",
+        "semester": "קיץ",
+        "department": "cs",
+        "courseCredit": "Didnt Find Credits",
+        "prerequisites": [
+            " אנגלית בסיסי (מתחילים)"
+        ],
+        "prerequisitesAlt": [],
+        "groups": [
+            {
+                "groupCode": "250600209",
+                "lectureType": 0,
+                "startTime": "14:00",
+                "endTime": "16:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' קלף לואיז",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600209_2",
+                "lectureType": 0,
+                "startTime": "14:00",
+                "endTime": "16:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' קלף לואיז",
+                "dayOfWeek": 3
+            },
+            {
+                "groupCode": "250600210",
+                "lectureType": 0,
+                "startTime": "18:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' קלף לואיז",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600210_2",
+                "lectureType": 0,
+                "startTime": "18:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' קלף לואיז",
+                "dayOfWeek": 3
+            },
+            {
+                "groupCode": "250600211",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "10:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' וולפרט רחל",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "250600211_2",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "10:50",
+                "room": "קריה ה'7",
+                "lecturer": "גב' וולפרט רחל",
+                "dayOfWeek": 5
+            },
+            {
+                "groupCode": "250600212",
+                "lectureType": 0,
+                "startTime": "12:00",
+                "endTime": "14:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "No Lecturer Yet",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "250600212_2",
+                "lectureType": 0,
+                "startTime": "11:00",
+                "endTime": "13:50",
+                "room": "קריה ה'5",
+                "lecturer": "No Lecturer Yet",
+                "dayOfWeek": 5
+            }
+        ],
+        "realCourseCode": "6002"
+    },
+    {
+        "courseType": "קורסי חובה לימודי אנגלית",
+        "courseName": "אנגלית מתקדמים ב' (מתקדמים)",
+        "courseCode": "273",
+        "semester": "א",
+        "department": "cs",
+        "courseCredit": "Didnt Find Credits",
+        "prerequisites": [
+            " אנגלית מתקדמים א' (בינוניים)"
+        ],
+        "prerequisitesAlt": [],
+        "groups": [
+            {
+                "groupCode": "250600301",
+                "lectureType": 0,
+                "startTime": "10:00",
+                "endTime": "13:50",
+                "room": "קריה ג'6",
+                "lecturer": "גב' נסים רונלי",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600302",
+                "lectureType": 0,
+                "startTime": "10:00",
+                "endTime": "13:50",
+                "room": "מפ\"ט תמר",
+                "lecturer": "גב' קלף לואיז",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "250600303",
+                "lectureType": 0,
+                "startTime": "16:00",
+                "endTime": "19:50",
+                "room": "251 פיקוס",
+                "lecturer": "ד\"ר שוורץ בריגיטה רחל",
+                "dayOfWeek": 4
+            },
+            {
+                "groupCode": "250600304",
+                "lectureType": 0,
+                "startTime": "09:00",
+                "endTime": "12:50",
+                "room": "קריה ה'9",
+                "lecturer": "גב' נסים רונלי",
+                "dayOfWeek": 5
+            },
+            {
+                "groupCode": "250600318",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט תמר",
+                "lecturer": "גב' ליבוביץ נעה",
+                "dayOfWeek": 0
+            },
+            {
+                "groupCode": "250600319",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' בללוב נינה",
+                "dayOfWeek": 3
+            }
+        ],
+        "realCourseCode": "6003"
+    },
+    {
+        "courseType": "קורסי חובה לימודי אנגלית",
+        "courseName": "אנגלית מתקדמים ב' (מתקדמים)",
+        "courseCode": "274",
+        "semester": "ב",
+        "department": "cs",
+        "courseCredit": "Didnt Find Credits",
+        "prerequisites": [
+            " אנגלית מתקדמים א' (בינוניים)"
+        ],
+        "prerequisitesAlt": [],
+        "groups": [
+            {
+                "groupCode": "250600306",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "11:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' וולפרט רחל",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "250600307",
+                "lectureType": 0,
+                "startTime": "13:00",
+                "endTime": "16:50",
+                "room": "מפ\"ט רימון",
+                "lecturer": "גב' וולפרט רחל",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "250600308",
+                "lectureType": 0,
+                "startTime": "16:00",
+                "endTime": "19:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' ליבוביץ נעה",
+                "dayOfWeek": 4
+            },
+            {
+                "groupCode": "250600309",
+                "lectureType": 0,
+                "startTime": "09:00",
+                "endTime": "12:50",
+                "room": "115 פיקוס",
+                "lecturer": "גב' נסים רונלי",
+                "dayOfWeek": 5
+            },
+            {
+                "groupCode": "250600320",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט גפן",
+                "lecturer": "גב' ליבוביץ נעה",
+                "dayOfWeek": 0
+            },
+            {
+                "groupCode": "250600321",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' בללוב נינה",
+                "dayOfWeek": 3
+            }
+        ],
+        "realCourseCode": "6003"
+    },
+    {
+        "courseType": "קורסי חובה לימודי אנגלית",
+        "courseName": "אנגלית מתקדמים ב' (מתקדמים)",
+        "courseCode": "275",
+        "semester": "קיץ",
+        "department": "cs",
+        "courseCredit": "Didnt Find Credits",
+        "prerequisites": [
+            " אנגלית מתקדמים א' (בינוניים)"
+        ],
+        "prerequisitesAlt": [],
+        "groups": [
+            {
+                "groupCode": "250600311",
+                "lectureType": 0,
+                "startTime": "09:00",
+                "endTime": "11:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "גב' נסים רונלי",
+                "dayOfWeek": 3
+            },
+            {
+                "groupCode": "250600311_2",
+                "lectureType": 0,
+                "startTime": "09:00",
+                "endTime": "11:50",
+                "room": "115 פיקוס",
+                "lecturer": "גב' נסים רונלי",
+                "dayOfWeek": 5
+            },
+            {
+                "groupCode": "250600312",
+                "lectureType": 0,
+                "startTime": "09:00",
+                "endTime": "11:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "גב' נסים רונלי",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600312_2",
+                "lectureType": 0,
+                "startTime": "09:00",
+                "endTime": "11:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' נסים רונלי",
+                "dayOfWeek": 4
+            },
+            {
+                "groupCode": "250600313",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "19:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "ד\"ר חריזמן קרן (אנה)",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "250600313_2",
+                "lectureType": 0,
+                "startTime": "08:00",
+                "endTime": "10:50",
+                "room": "קריה ה'5",
+                "lecturer": "ד\"ר חריזמן קרן (אנה)",
+                "dayOfWeek": 5
+            },
+            {
+                "groupCode": "250600314",
+                "lectureType": 0,
+                "startTime": "14:00",
+                "endTime": "16:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' ליבוביץ נעה",
+                "dayOfWeek": 0
+            },
+            {
+                "groupCode": "250600314_2",
+                "lectureType": 0,
+                "startTime": "14:00",
+                "endTime": "16:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "גב' ליבוביץ נעה",
+                "dayOfWeek": 2
+            },
+            {
+                "groupCode": "250600315",
+                "lectureType": 0,
+                "startTime": "10:00",
+                "endTime": "12:50",
+                "room": "מפ\"ט אתרוג",
+                "lecturer": "ד\"ר חריזמן קרן (אנה)",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600315_2",
+                "lectureType": 0,
+                "startTime": "10:00",
+                "endTime": "12:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "ד\"ר חריזמן קרן (אנה)",
+                "dayOfWeek": 4
+            },
+            {
+                "groupCode": "250600316",
+                "lectureType": 0,
+                "startTime": "14:00",
+                "endTime": "16:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "גב' מרקס אן",
+                "dayOfWeek": 3
+            },
+            {
+                "groupCode": "250600316_2",
+                "lectureType": 0,
+                "startTime": "14:00",
+                "endTime": "16:50",
+                "room": "מפ\"ט זית",
+                "lecturer": "גב' מרקס אן",
+                "dayOfWeek": 4
+            },
+            {
+                "groupCode": "250600317",
+                "lectureType": 0,
+                "startTime": "18:00",
+                "endTime": "20:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "גב' מרקס אן",
+                "dayOfWeek": 3
+            },
+            {
+                "groupCode": "250600317_2",
+                "lectureType": 0,
+                "startTime": "18:00",
+                "endTime": "20:50",
+                "room": "115 פיקוס",
+                "lecturer": "גב' מרקס אן",
+                "dayOfWeek": 4
+            },
+            {
+                "groupCode": "250600322",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "19:50",
+                "room": "115 פיקוס",
+                "lecturer": "ד\"ר גפנר מריה",
+                "dayOfWeek": 1
+            },
+            {
+                "groupCode": "250600322_2",
+                "lectureType": 0,
+                "startTime": "17:00",
+                "endTime": "19:50",
+                "room": "מפ\"ט תאנה",
+                "lecturer": "ד\"ר גפנר מריה",
+                "dayOfWeek": 4
+            }
+        ],
+        "realCourseCode": "6003"
+    }
+]

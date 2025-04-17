@@ -6,7 +6,8 @@ import time
 import json
 import re
 import consts
-
+import os
+from transform_schdule import transform_schedule
 
 
 
@@ -79,13 +80,13 @@ def get_credits_and_prerequisites(driver,wait):
         related_topics = driver.find_elements(By.XPATH,
                                               "//div[@class='col InRange'][label[contains(text(), 'נושא נקשר')]]")
         for topic in related_topics:
-            print(topic.text)
+            #print(topic.text)
             if topic.text.strip():
                 pre_course.add(topic.text)
 
         related_topics = driver.find_elements(By.XPATH, "//div[@class='col InRange'][label[contains(text(), 'חליפי')]]")
         for topic in related_topics:
-            print(topic.text)
+            #print(topic.text)
             if topic.text.strip():
                 pre_course_maybe.add(topic.text)
     except Exception:
@@ -134,7 +135,6 @@ def extract_course_info(driver, wait, course_subject, course_name, course_code, 
                     lecturer = "No Lecturer Yet"
 
                 room = course.find_element(By.XPATH, ".//div[contains(@class, 'InRange')][6]").text.split(":")[-1].strip()
-
                 # Create course data dictionary
                 course_data = {
                     "Course Subject": course_subject,
@@ -174,6 +174,9 @@ def process_child_row(driver, wait, parent_row_index, child_row_index, course_su
         course_name = child_row.find_elements(By.XPATH, ".//div")[1].text
         course_code = child_row.find_elements(By.XPATH, ".//div")[0].text
 
+        if course_name == "פרויקט גמר חלק ב'":
+            print("not going into פרויקט גמר חלק ב'")
+            return [], True, child_row_index + 1
         # Find and click the button
         button = child_row.find_element(By.XPATH,
                                         ".//input[@value='חיפוש קורס במערכת השעות' and @tabindex='0']")
@@ -230,7 +233,11 @@ def process_parent_row(driver, wait, parent_row_index):
 
         parent_row = driver.find_element(By.XPATH, parent_row_xpath)
         course_subject = parent_row.find_elements(By.XPATH, ".//div")[0].text
+
         if course_subject == 'קורסי חובה נוספים':
+            return all_courses_data, True, parent_row_index + 1
+
+        if course_subject == 'קורסי יחידה ללימודי חברה ורוח':
             return all_courses_data, False, parent_row_index + 1
 
         # Extract and navigate to the course link
@@ -327,10 +334,37 @@ def main():
         courses_data, more_parent_rows, parent_row_index = process_parent_row(driver, wait, parent_row_index)
         all_courses_data.extend(courses_data)
 
+
     # Save results and clean up
     suffix = f"{selected_program_code}_{selected_specialization_code}" if selected_specialization_code else f"{selected_program_code}_base"
-    save_to_json(all_courses_data, f"courses_{suffix}.json")
+
+    # Save raw scraped data
+    raw_path = os.path.join("raw_scraper_data", f"courses_{suffix}.json")
+    save_to_json(all_courses_data, raw_path)
+
     driver.quit()
+
+
+    # Transform and save to transformed folder
+    transformed_path = os.path.join("transformed_data", f"courses_{suffix}.json")
+    transform_schedule(raw_path, transformed_path, selected_program_name)
+
+    # If specialization, append to base
+    if selected_specialization_code:
+        base_path = os.path.join("transformed_data", f"courses_{selected_program_code}_base.json")
+        final_path = os.path.join("combined_data", f"courses_{selected_program_code}_final.json")
+
+        # Load base + specialization
+        with open(base_path, "r", encoding="utf-8") as f:
+            base_courses = json.load(f)
+        with open(transformed_path, "r", encoding="utf-8") as f:
+            spec_courses = json.load(f)
+
+        # Combine and save
+        combined_courses = base_courses + spec_courses
+        with open(final_path, "w", encoding="utf-8") as f:
+            json.dump(combined_courses, f, indent=4, ensure_ascii=False)
+
     print("Scraping Ran Successfully")
 
 
