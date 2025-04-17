@@ -14,6 +14,12 @@ def clean_grade(grade_text_in):
     return match.group(1) if match else "N/A"  # Return "N/A" if not found
 
 
+def clean_nz(grade_text_in):
+    credits_pattern = r"נ\"ז (\d+(\.\d+)?)"
+    match = re.search(credits_pattern, grade_text_in)
+    return match.group(1) if match else "N/A"  # Return "N/A" if not found
+
+
 # Function to clean the course code (get only the number before the first non-digit character)
 def clean_code(code_text_in):
     match = re.match(r"(\d+)", code_text_in)
@@ -136,9 +142,13 @@ try:
                 # Check if there is a <div class="InRange"> containing "סופי-הרצאה"
                 inrange_divs = father.find_elements(By.CLASS_NAME, "InRange")
                 found_sofi = False
+                nz_grade = ''
                 for ir_index, inrange in enumerate(inrange_divs):
                     inrange_text = inrange.get_attribute("innerHTML").strip()
                     print(f"      InRange div {ir_index + 1}: '{inrange_text}'")
+                    nz_temp = clean_nz(inrange_text)
+                    if nz_temp != "N/A":
+                        nz_grade = nz_temp
                     if "סופי-הרצאה" in inrange_text:
                         found_sofi = True
                         print(f"      Found 'סופי-הרצאה' in InRange div {ir_index + 1}/{len(inrange_divs)}.")
@@ -151,14 +161,14 @@ try:
                             print(grade_text)
                             grade = clean_grade(grade_text)
                             print(grade)
-
+                            print(nz_grade)
                             # Extract the course code
                             code_div = father.find_element(By.CLASS_NAME, "pagetitle.InRange")
                             code_text = code_div.get_attribute("innerHTML").strip()
                             code = clean_code(code_text)
 
                             # Append to results
-                            results["Courses"].append({code: grade})
+                            results["Courses"].append({code: [grade, nz_grade]})
                             print(f"      Extracted course: {code} | Grade: {grade}")
                         except Exception as e:
                             print(f"      Warning: <strong> element not found - {e}")
